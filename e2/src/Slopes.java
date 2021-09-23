@@ -24,6 +24,7 @@ public class Slopes {
 
 
     }
+
     /*** Traverses the slope map making the right and down movements and
      * returns the number of trees found along the way .
      * @param slopeMap A square matrix representing the slope with spaces
@@ -97,25 +98,19 @@ public class Slopes {
         boolean sliding = true;
         int posX = 0, posY = 0;
 
-
         char c = slopeMap[posY][posX];
         if (c == '#')
             treesOnTheWay++;
 
+
         while (sliding) {
-            for (int r = 0; r < right; r++) {
-                posX++;
-                if (posX >= mMapSize) {
-                    posX = 0;
-                }
-            }
-            for (int d = 0; d < down; d++) {
-                posY++;
-                if (posY >= mMapSize) {
-                    sliding = false;
-                    posY--;
-                    continue;
-                }
+            posX += right;
+            posX = posX % mMapSize;
+
+            posY += down;
+            if (posY >= mMapSize) {
+                sliding = false;
+                continue;
             }
             c = slopeMap[posY][posX];
             if (c == '#')
