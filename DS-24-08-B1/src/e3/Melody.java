@@ -2,6 +2,7 @@ package e3;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Melody {
 
@@ -33,9 +34,12 @@ public class Melody {
      *                                  or the time are not valid values .
      */
     public void addNote(Notes note, Accidentals accidental, float time) throws IllegalArgumentException {
-        if (time <= 0) throw new IllegalArgumentException("El tiempo no puede ser menor que 0");
 
-        melody.add(new NoteInMel(note, accidental, time));
+        if (time <= 0) throw new IllegalArgumentException("El tiempo no puede ser menor que 0");
+        if (note == null || accidental == null)
+            throw new IllegalArgumentException("Valores no válidos");
+        else
+            melody.add(new NoteInMel(note, accidental, time));
     }
 
     /**
@@ -47,7 +51,7 @@ public class Melody {
      */
     public Notes getNote(int index) throws IllegalArgumentException {
 
-        if (index >= melody.size() || index < 0) throw new IllegalArgumentException("Posicion erronea");
+        if (index >= melody.size() || index < 0) throw new IllegalArgumentException("Posición erronea");
 
         return melody.get(index).getNote();
     }
@@ -61,7 +65,7 @@ public class Melody {
      */
     public Accidentals getAccidental(int index) throws IllegalArgumentException {
 
-        if (index >= melody.size() || index < 0) throw new IllegalArgumentException("Posicion erronea");
+        if (index >= melody.size() || index < 0) throw new IllegalArgumentException("Posición erronea");
 
         return melody.get(index).getAccidental();
     }
@@ -75,7 +79,7 @@ public class Melody {
      */
     public float getTime(int index) throws IllegalArgumentException {
 
-        if (index >= melody.size() || index < 0) throw new IllegalArgumentException("Posicion erronea");
+        if (index >= melody.size() || index < 0) throw new IllegalArgumentException("Posición erronea");
 
         return melody.get(index).getDuration();
     }
@@ -95,16 +99,64 @@ public class Melody {
      * @return The duration of this melody in milliseconds .
      */
     public float getDuration() {
-        float duration=0f;
-        for(NoteInMel n: melody){
-            duration+=n.getDuration();
+        float duration = 0f;
+        for (NoteInMel n : melody) {
+            duration += n.getDuration();
         }
         return duration;
     }
 
+    /**
+     * Performs the equality tests of the current melody with another melody
+     * passed as a parameter . Two melodies are equal if they represent the same
+     * music fragment regardless of the name of its notes .
+     *
+     * @param o The melody to be compared with the current melody .
+     *          6
+     * @return true if the melodies are equals , false otherwise .
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Melody melody1 = (Melody) o;
+
+        return Objects.equals(melody, melody1.melody);
+    }
+
+    /**
+     * Returns an integer that is a hash code representation of the melody .
+     * Two melodies m1 , m2 that are equals (m1. equals (m2) == true ) must
+     * have the same hash code .
+     *
+     * @return The hash code of this melody .
+     */
+    @Override
+    public int hashCode() {
+        //return Objects.hashCode(melody);
+        return Objects.hash(melody);
+    }
 
     @Override
     public String toString() { /* ... */
-        return "";
+        String cad = "";
+        boolean spc = false;
+        for (NoteInMel n : melody) {
+            if (spc)
+                cad += " ";
+
+            cad += n.getNote();
+            if (n.getAccidental() == Accidentals.SHARP) {
+                cad += "#";
+            } else if (n.getAccidental() == Accidentals.FLAT) {
+                cad += "b";
+            }
+            cad += "(" + n.getDuration() + ")";
+            spc = true;
+        }
+
+        return cad;
     }
+
+
 }

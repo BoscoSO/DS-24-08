@@ -27,7 +27,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="e2" scope="TEST" />
     <orderEntry type="module-library" scope="TEST">
       <library name="JUnit5.7.0">
         <CLASSES>
@@ -44,7 +43,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="e1" scope="TEST" />
-    <orderEntry type="module" module-name="e3" scope="TEST" />
+    <orderEntry type="module" module-name="DS-24-08-B1" scope="TEST" />
   </component>
 </module>

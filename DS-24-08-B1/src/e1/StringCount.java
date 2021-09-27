@@ -1,3 +1,5 @@
+package e1;
+
 public class StringCount {
     /**
      * Counts the number of words in a given String .

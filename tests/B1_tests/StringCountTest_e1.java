@@ -1,3 +1,6 @@
+package B1_tests;
+
+import e1.StringCount;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
