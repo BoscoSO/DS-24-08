@@ -8,7 +8,8 @@ public class StringCount {
      * @param text String with the words
      * @return Number of words in the String or zero if it is null
      */
-    public static int countWords ( String text ) { /* ... */ return 0; }
+    public static int countWords ( String text ) { return text.split(" ").length;
+        }
     /**
      * Counts the number of times the given character appears in the String .
      * Accented characters are considered different characters .
@@ -36,5 +37,7 @@ public class StringCount {
      * @param password The password , we assume it is not null .
      * @return true if the password is safe , false otherwise
      */
-    public static boolean isPasswordSafe ( String password ) { /* ... */ return false;}
+    public static boolean isPasswordSafe ( String password ) {
+
+        /* ... */ return false;}
 }
