@@ -8,7 +8,18 @@ public class StringCount {
      * @param text String with the words
      * @return Number of words in the String or zero if it is null
      */
-    public static int countWords ( String text ) { /* ... */ return 0; }
+    public static int countWords ( String text ) {
+        if( text == null) {
+            return 0;
+        }
+        else {
+
+            return text.split( " ").length;
+        }
+    }
+
+
+
     /**
      * Counts the number of times the given character appears in the String .
      * Accented characters are considered different characters .
@@ -16,7 +27,25 @@ public class StringCount {
      * @param c the character to be found
      * @return Number of times the character appears in the String or zero if null
      */
-    public static int countChar ( String text , char c) { /* ... */ return 0;}
+
+
+    public static int countChar ( String text , char c){
+
+        int cont = 0;
+
+        if( text == null){
+
+            return 0;
+        }
+        else{
+            for(int i=0; i < text.length(); i++) {
+                if ((text.charAt(i) == 'c')){
+            return cont++;
+        }
+
+    }
+
+
     /**
      * Counts the number of times the given character appears in the String .
      * The case is ignored so an ’a’ is equal to an ’A ’.
@@ -25,7 +54,12 @@ public class StringCount {
      * @param c the character to be found
      * @return Number of times the character appears in the String or zero if null
      */
-    public static int countCharIgnoringCase ( String text , char c ) { /* ... */ return 0;}
+    public static int countCharIgnoringCase ( String text , char c ) {
+
+        /* ... */ return 0;
+    }
+
+
     /**
      * Checks if a password is safe according to the following rules :
      * - Has at least 8 characters
@@ -36,5 +70,9 @@ public class StringCount {
      * @param password The password , we assume it is not null .
      * @return true if the password is safe , false otherwise
      */
-    public static boolean isPasswordSafe ( String password ) { /* ... */ return false;}
+    public static boolean isPasswordSafe ( String password ) {
+
+        /* ... */ return false;
+
+    }
 }
