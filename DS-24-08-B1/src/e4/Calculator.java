@@ -4,21 +4,25 @@ import java.util.*;
 
 public class Calculator {
 
-    private HashMap<String, float[]> mem;
-
+    private List<String> operations = null;
+    private List<float[]> operators = null;
 
     /**
      * Public constructor of the calculator .
      */
     public Calculator() {
-        cleanOperations();
+
+        operations = new ArrayList<>(Collections.emptyList());
+        operators = new ArrayList<>(Collections.emptyList());
     }
 
     /**
      * Clean the internal state of the calculator
      */
     public void cleanOperations() {
-        mem = new HashMap<String, float[]>(Collections.emptyMap());
+        operators.clear();
+        operations.clear();
+
     }
 
     /**
@@ -38,8 +42,11 @@ public class Calculator {
     public void addOperation(String operation, float... values) throws IllegalArgumentException {
         if (!operation.equals("+") && !operation.equals("-") && !operation.equals("/") && !operation.equals("*")) {
             throw new IllegalArgumentException("No existe ese tipo de operación");
-        } else
-            mem.put(operation, values);
+        } else {
+            operations.add(operation);
+            operators.add(values);
+        }
+
     }
 
     /**
@@ -53,35 +60,41 @@ public class Calculator {
      *                             ( division by zero )
      */
     public float executeOperations() throws ArithmeticException {
-        List<float[]> values = new ArrayList<>(mem.values());
-        List<String> operations = new ArrayList<>(mem.keySet());
-        //cleanOperations(); // aqui ya pdría limpiar los datos
-
         Operation op;
         float result = 0;
         int i = 0;
         float x = 0, y = 0;
+
         for (String operation : operations) {
             switch (operation) {
                 case "+" -> op = Operation.ADD;
                 case "-" -> op = Operation.SUBSTRACT;
                 case "*" -> op = Operation.MULTIPLY;
                 case "/" -> op = Operation.DIVIDE;
-                default -> throw new IllegalArgumentException("Operación no válida");
+                default -> {
+                    cleanOperations();
+                    throw new IllegalArgumentException("Operación no válida");
+                }
             }
 
             if (i == 0) {
-                x = values.get(i)[0];
-                y = values.get(i)[1];
+                x = operators.get(i)[0];
+                y = operators.get(i)[1];
             } else
-                y = values.get(i)[0];
-
+                y = operators.get(i)[0];
+            try {
                 result = op.perform(x, y);
+            } catch (ArithmeticException e) {
+                cleanOperations();
+                throw e;
+            }
+
             x = result;
             i++;
         }
 
-        //cleanOperations();
+        cleanOperations();
+
         return result;
     }
 
@@ -97,17 +110,15 @@ public class Calculator {
      */
     @Override
     public String toString() {
-        List<float[]> values = new ArrayList<>(mem.values());
-        List<String> operations = new ArrayList<>(mem.keySet());
         String cad = "[STATE:";
         int i = 0;
 
 
         for (String op : operations) { //MaL guardadas, PIERDE EL PRIMERO
 
-            cad += "[" + op + "]" + values.get(i)[0];
-            if (i == 0 && values.get(i).length>=1) {
-                cad += "_" + values.get(i)[1];
+            cad += "[" + op + "]" + operators.get(i)[0];
+            if (i == 0 && operators.get(i).length >= 1) {
+                cad += "_" + operators.get(i)[1];
             }
             i++;
 
