@@ -15,13 +15,13 @@ public class Melody {
     }
 
 
-    List<NoteInMel> melody;
+    List<NoteInMel> melody;                 //Contiene la sucesion de notas con sus accidentales y duraciones
 
     /**
      * Creates an empty e3.Melody instance .
      */
     public Melody() {
-        melody = new ArrayList<NoteInMel>();
+        melody = new ArrayList<NoteInMel>();    //Inicio la lista vacia
     }
 
     /**
@@ -35,11 +35,11 @@ public class Melody {
      */
     public void addNote(Notes note, Accidentals accidental, float time) throws IllegalArgumentException {
 
-        if (time <= 0) throw new IllegalArgumentException("El tiempo no puede ser menor que 0");
+        if (time <= 0) throw new IllegalArgumentException("El tiempo no puede ser menor que 0");        //compruebo que los valores no sean erroneos
         if (note == null || accidental == null)
             throw new IllegalArgumentException("Valores no válidos");
         else
-            melody.add(new NoteInMel(note, accidental, time));
+            melody.add(new NoteInMel(note, accidental, time));                          //Añado la nueva nota a la melodia
     }
 
     /**
@@ -51,9 +51,9 @@ public class Melody {
      */
     public Notes getNote(int index) throws IllegalArgumentException {
 
-        if (index >= melody.size() || index < 0) throw new IllegalArgumentException("Posición erronea");
+        if (index >= melody.size() || index < 0) throw new IllegalArgumentException("Posición erronea");        //Compruebo que los valores no sean erroneos
 
-        return melody.get(index).getNote();
+        return melody.get(index).getNote();                                             //recupero la nota
     }
 
     /**
@@ -65,9 +65,9 @@ public class Melody {
      */
     public Accidentals getAccidental(int index) throws IllegalArgumentException {
 
-        if (index >= melody.size() || index < 0) throw new IllegalArgumentException("Posición erronea");
+        if (index >= melody.size() || index < 0) throw new IllegalArgumentException("Posición erronea");        //Compruebo que los valores no sean erroneos
 
-        return melody.get(index).getAccidental();
+        return melody.get(index).getAccidental();                                             //recupero el accidental de la nota
     }
 
     /**
@@ -79,9 +79,9 @@ public class Melody {
      */
     public float getTime(int index) throws IllegalArgumentException {
 
-        if (index >= melody.size() || index < 0) throw new IllegalArgumentException("Posición erronea");
+        if (index >= melody.size() || index < 0) throw new IllegalArgumentException("Posición erronea");        //Compruebo que los valores no sean erroneos
 
-        return melody.get(index).getDuration();
+        return melody.get(index).getDuration();                                             //recupero la duracion de la nota
     }
 
     /**
@@ -90,7 +90,7 @@ public class Melody {
      * @return The number of notes in this melody .
      */
     public int size() {
-        return melody.size();
+        return melody.size();                                             //devuelvo el tamaño de la lista
     }
 
     /**
@@ -101,7 +101,7 @@ public class Melody {
     public float getDuration() {
         float duration = 0f;
         for (NoteInMel n : melody) {
-            duration += n.getDuration();
+            duration += n.getDuration();        //Sumo las distintas duraciones de las notas en la melodia
         }
         return duration;
     }
@@ -133,12 +133,11 @@ public class Melody {
      */
     @Override
     public int hashCode() {
-        //return Objects.hashCode(melody);
         return Objects.hash(melody);
     }
 
     @Override
-    public String toString() { /* ... */
+    public String toString() {
         String cad = "";
         boolean spc = false;
         for (NoteInMel n : melody) {

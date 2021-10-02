@@ -8,7 +8,8 @@ import java.util.Objects;
 import static e3.Melody.Accidentals.*;
 import static e3.Melody.Notes.*;
 
-public class NoteInMel {
+public class NoteInMel {                    //Objeto que representa una nota en la melodia,
+                                            //Contiene un accidental y una duración
     private final Melody.Notes note;
     private final Melody.Accidentals accidental;
     private final float duration;
@@ -38,7 +39,7 @@ public class NoteInMel {
         if (o == null || getClass() != o.getClass()) return false;
         NoteInMel noteInMel = (NoteInMel) o;
 
-        switch (note) {
+        switch (note) {         //Comprobacion de las equivalencias entre notas
             case DO -> {
                 switch (accidental) {
                     case NATURAL:
@@ -142,12 +143,12 @@ public class NoteInMel {
         }
 
 
-        return Float.compare(noteInMel.duration, duration) == 0 && note == noteInMel.note && accidental == noteInMel.accidental;
+        return Float.compare(noteInMel.duration, duration) == 0 && note == noteInMel.note && accidental == noteInMel.accidental; //Para el resto
     }
 
     @Override
     public int hashCode() {
-        switch (note) {
+        switch (note) {                 //Devuelvo el mismo hashcode para las notas que son equivalentes
             case DO -> {
                 if(accidental== SHARP) return Objects.hash(RE,FLAT,duration);
             }
@@ -173,6 +174,6 @@ public class NoteInMel {
             }
         }
 
-        return Objects.hash(note, accidental, duration);
+        return Objects.hash(note, accidental, duration);    //Las demas se generan solas
     }
 }

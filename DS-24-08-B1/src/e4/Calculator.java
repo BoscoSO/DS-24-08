@@ -10,7 +10,7 @@ public class Calculator {
     /**
      * Public constructor of the calculator .
      */
-    public Calculator() {
+    public Calculator() {           //Inicializa las listas vacias
 
         operations = new ArrayList<>(Collections.emptyList());
         operators = new ArrayList<>(Collections.emptyList());
@@ -19,10 +19,9 @@ public class Calculator {
     /**
      * Clean the internal state of the calculator
      */
-    public void cleanOperations() {
+    public void cleanOperations() { //Vacia las listas de datos
         operators.clear();
         operations.clear();
-
     }
 
     /**
@@ -40,9 +39,10 @@ public class Calculator {
      * @throws IllegalArgumentException If the operation does not exist .
      */
     public void addOperation(String operation, float... values) throws IllegalArgumentException {
-        if (!operation.equals("+") && !operation.equals("-") && !operation.equals("/") && !operation.equals("*")) {
+        if (!operation.equals("+") && !operation.equals("-") && !operation.equals("/") && !operation.equals("*")) { //Comprueba que la operacion no sea invalida
             throw new IllegalArgumentException("No existe ese tipo de operación");
-        } else {
+
+        } else {        //Añade la operacion y los valores a las listas
             operations.add(operation);
             operators.add(values);
         }
@@ -65,35 +65,36 @@ public class Calculator {
         int i = 0;
         float x = 0, y = 0;
 
-        for (String operation : operations) {
-            switch (operation) {
+        for (String operation : operations) {           //Por cada operacion
+            switch (operation) {                        //Comprueba cual es y la carga en "op"
                 case "+" -> op = Operation.ADD;
                 case "-" -> op = Operation.SUBSTRACT;
                 case "*" -> op = Operation.MULTIPLY;
                 case "/" -> op = Operation.DIVIDE;
                 default -> {
-                    cleanOperations();
+                    cleanOperations();                  //Si no es ninguna de las anteriores se resetea y salta excepcion
                     throw new IllegalArgumentException("Operación no válida");
                 }
             }
 
-            if (i == 0) {
+            if (i == 0) {               //La primera vez recibe dos valores
                 x = operators.get(i)[0];
                 y = operators.get(i)[1];
-            } else
+            } else                      //El resto solo uno
                 y = operators.get(i)[0];
+
             try {
-                result = op.perform(x, y);
-            } catch (ArithmeticException e) {
+                result = op.perform(x, y);      //ejecuta la operacion
+            } catch (ArithmeticException e) {   //Atrapa resetea y vuelve a lanzar el error si divide por 0
                 cleanOperations();
                 throw e;
             }
 
-            x = result;
-            i++;
+            x = result;     //Acumula el resultado
+            i++;            //siguiente posicion en los operadores
         }
 
-        cleanOperations();
+        cleanOperations();  //Limpiamos los valores de las listas
 
         return result;
     }
@@ -109,13 +110,12 @@ public class Calculator {
      * @return String of the internal state of the calculator
      */
     @Override
-    public String toString() {
+    public String toString() {      //Imprime con cierto formato el valor de la calculadora
         String cad = "[STATE:";
         int i = 0;
 
 
-        for (String op : operations) { //MaL guardadas, PIERDE EL PRIMERO
-
+        for (String op : operations) {
             cad += "[" + op + "]" + operators.get(i)[0];
             if (i == 0 && operators.get(i).length >= 1) {
                 cad += "_" + operators.get(i)[1];
