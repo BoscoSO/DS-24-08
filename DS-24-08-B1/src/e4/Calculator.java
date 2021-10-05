@@ -4,21 +4,24 @@ import java.util.*;
 
 public class Calculator {
 
-    private HashMap<String, float[]> mem;
-
+    private List<String> operations = null;
+    private List<float[]> operators = null;
 
     /**
      * Public constructor of the calculator .
      */
-    public Calculator() {
-        cleanOperations();
+    public Calculator() {           //Inicializa las listas vacias
+
+        operations = new ArrayList<>(Collections.emptyList());
+        operators = new ArrayList<>(Collections.emptyList());
     }
 
     /**
      * Clean the internal state of the calculator
      */
-    public void cleanOperations() {
-        mem = new HashMap<String, float[]>(Collections.emptyMap());
+    public void cleanOperations() { //Vacia las listas de datos
+        operators.clear();
+        operations.clear();
     }
 
     /**
@@ -36,10 +39,14 @@ public class Calculator {
      * @throws IllegalArgumentException If the operation does not exist .
      */
     public void addOperation(String operation, float... values) throws IllegalArgumentException {
-        if (!operation.equals("+") && !operation.equals("-") && !operation.equals("/") && !operation.equals("*")) {
+        if (!operation.equals("+") && !operation.equals("-") && !operation.equals("/") && !operation.equals("*")) { //Comprueba que la operacion no sea invalida
             throw new IllegalArgumentException("No existe ese tipo de operación");
-        } else
-            mem.put(operation, values);
+
+        } else {        //Añade la operacion y los valores a las listas
+            operations.add(operation);
+            operators.add(values);
+        }
+
     }
 
     /**
@@ -53,35 +60,42 @@ public class Calculator {
      *                             ( division by zero )
      */
     public float executeOperations() throws ArithmeticException {
-        List<float[]> values = new ArrayList<>(mem.values());
-        List<String> operations = new ArrayList<>(mem.keySet());
-        //cleanOperations(); // aqui ya pdría limpiar los datos
-
         Operation op;
         float result = 0;
         int i = 0;
         float x = 0, y = 0;
-        for (String operation : operations) {
-            switch (operation) {
+
+        for (String operation : operations) {           //Por cada operacion
+            switch (operation) {                        //Comprueba cual es y la carga en "op"
                 case "+" -> op = Operation.ADD;
                 case "-" -> op = Operation.SUBSTRACT;
                 case "*" -> op = Operation.MULTIPLY;
                 case "/" -> op = Operation.DIVIDE;
-                default -> throw new IllegalArgumentException("Operación no válida");
+                default -> {
+                    cleanOperations();                  //Si no es ninguna de las anteriores se resetea y salta excepcion
+                    throw new IllegalArgumentException("Operación no válida");
+                }
             }
 
-            if (i == 0) {
-                x = values.get(i)[0];
-                y = values.get(i)[1];
-            } else
-                y = values.get(i)[0];
+            if (i == 0) {               //La primera vez recibe dos valores
+                x = operators.get(i)[0];
+                y = operators.get(i)[1];
+            } else                      //El resto solo uno
+                y = operators.get(i)[0];
 
-                result = op.perform(x, y);
-            x = result;
-            i++;
+            try {
+                result = op.perform(x, y);      //ejecuta la operacion
+            } catch (ArithmeticException e) {   //Atrapa resetea y vuelve a lanzar el error si divide por 0
+                cleanOperations();
+                throw e;
+            }
+
+            x = result;     //Acumula el resultado
+            i++;            //siguiente posicion en los operadores
         }
 
-        //cleanOperations();
+        cleanOperations();  //Limpiamos los valores de las listas
+
         return result;
     }
 
@@ -96,18 +110,15 @@ public class Calculator {
      * @return String of the internal state of the calculator
      */
     @Override
-    public String toString() {
-        List<float[]> values = new ArrayList<>(mem.values());
-        List<String> operations = new ArrayList<>(mem.keySet());
+    public String toString() {      //Imprime con cierto formato el valor de la calculadora
         String cad = "[STATE:";
         int i = 0;
 
 
-        for (String op : operations) { //MaL guardadas, PIERDE EL PRIMERO
-
-            cad += "[" + op + "]" + values.get(i)[0];
-            if (i == 0 && values.get(i).length>=1) {
-                cad += "_" + values.get(i)[1];
+        for (String op : operations) {
+            cad += "[" + op + "]" + operators.get(i)[0];
+            if (i == 0 && operators.get(i).length >= 1) {
+                cad += "_" + operators.get(i)[1];
             }
             i++;
 
