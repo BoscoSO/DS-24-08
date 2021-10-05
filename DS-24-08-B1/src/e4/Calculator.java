@@ -39,6 +39,7 @@ public class Calculator {
      * @throws IllegalArgumentException If the operation does not exist .
      */
     public void addOperation(String operation, float... values) throws IllegalArgumentException {
+
         if (!operation.equals("+") && !operation.equals("-") && !operation.equals("/") && !operation.equals("*")) { //Comprueba que la operacion no sea invalida
             throw new IllegalArgumentException("No existe ese tipo de operación");
 
@@ -60,7 +61,7 @@ public class Calculator {
      *                             ( division by zero )
      */
     public float executeOperations() throws ArithmeticException {
-        Operation op;
+        Operation op=null;
         float result = 0;
         int i = 0;
         float x = 0, y = 0;
