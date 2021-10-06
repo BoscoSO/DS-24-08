@@ -6,7 +6,7 @@ Horario prácticas: Martes de 12:30 a 14:30<br>
 
 Integrantes: <br>
   -Bosco Suárez-LLanos Outeiriño<br>
-  -Samanta Karolai<br>
+  -Samanta Karolay Machuca Montalvo<br>
  
  ## Boletin 1  (DS-24-08-B1)
  
