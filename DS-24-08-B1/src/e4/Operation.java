@@ -1,25 +1,25 @@
 package e4;
 
 public enum Operation {     //Enumerado de operaciones donde comparten todas la implementacion de la funcion perform
-    ADD("+") {
+    ADD {
         @Override
         public float perform(float operand1, float operand2) throws ArithmeticException{
             return operand1 + operand2;
         }
     },//Realiza una suma
-    SUBSTRACT("-") {
+    SUBSTRACT {
         @Override
         public float perform(float operand1, float operand2) throws ArithmeticException{
             return operand1 - operand2;
         }
     },//Realiza una resta
-    MULTIPLY("*") {
+    MULTIPLY {
         @Override
         public float perform(float operand1, float operand2) {
             return operand1 * operand2;
         }
     },//Realiza una multiplicacion
-    DIVIDE("/") {
+    DIVIDE{
         @Override
         public float perform(float operand1, float operand2) throws ArithmeticException{
             if(operand2==0) throw new ArithmeticException("División por cero"); //Comprueba que no sea division por 0
@@ -28,15 +28,6 @@ public enum Operation {     //Enumerado de operaciones donde comparten todas la 
     };//Realiza una division
 
 
-    private final String operator;
-
-    Operation(String operator) {
-        this.operator = operator;
-    }
-
-    public String getOperator() {
-        return operator;
-    }
 
     public abstract float perform(float operand1, float operand2)throws ArithmeticException;
 }

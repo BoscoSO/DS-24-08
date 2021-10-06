@@ -17,8 +17,7 @@ public class StringCount {
                 String[] parts = text.split(" ");       //Divido el string en partes separando por espacios
 
 
-                for(int i = 0; i < parts.length; ++i) {       //Compruebo las partes que tengan algo dentro
-                    String c = parts[i];
+                for (String c : parts) {       //Compruebo las partes que tengan algo dentro
                     if (c.length() != 0) {
                         ++cont;
                     }

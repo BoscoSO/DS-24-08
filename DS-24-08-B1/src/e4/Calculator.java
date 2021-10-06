@@ -4,8 +4,8 @@ import java.util.*;
 
 public class Calculator {
 
-    private List<String> operations = null;
-    private List<float[]> operators = null;
+    private final List<String> operations;
+    private final List<float[]> operators ;
 
     /**
      * Public constructor of the calculator .
@@ -61,10 +61,10 @@ public class Calculator {
      *                             ( division by zero )
      */
     public float executeOperations() throws ArithmeticException {
-        Operation op=null;
+        Operation op;
         float result = 0;
         int i = 0;
-        float x = 0, y = 0;
+        float x = 0, y;
 
         for (String operation : operations) {           //Por cada operacion
             switch (operation) {                        //Comprueba cual es y la carga en "op"

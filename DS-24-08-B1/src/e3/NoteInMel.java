@@ -1,8 +1,5 @@
 package e3;
 
-import e3.Melody;
-
-import javax.print.attribute.standard.MediaSize;
 import java.util.Objects;
 
 import static e3.Melody.Accidentals.*;

@@ -21,7 +21,7 @@ public class Melody {
      * Creates an empty e3.Melody instance .
      */
     public Melody() {
-        melody = new ArrayList<NoteInMel>();    //Inicio la lista vacia
+        melody = new ArrayList<>();    //Inicio la lista vacia
     }
 
     /**
