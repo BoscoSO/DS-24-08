@@ -1,5 +1,3 @@
-package B1_tests;
-
 import e3.Melody;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

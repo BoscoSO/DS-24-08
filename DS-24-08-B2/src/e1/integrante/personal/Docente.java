@@ -38,8 +38,9 @@ public class Docente extends Personal {
 
     public asignaturas materia_impartida;
 
-    public Docente(String nombre, String apellido, int edad, asignaturas materia_impartida,int horrocruxesDestruidos) {
+    public Docente(String nombre, String apellido, int edad, asignaturas materia_impartida,int horrocruxesDestruidos) throws IllegalArgumentException  {
         super(nombre, apellido, edad,horrocruxesDestruidos,50);
+        if(materia_impartida==null) throw new IllegalArgumentException("Valor no puede ser nulo");
         this.materia_impartida = materia_impartida;
     }
 

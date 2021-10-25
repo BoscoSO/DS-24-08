@@ -3,7 +3,9 @@ package e1;
 import e1.integrante.Integrante;
 import e1.integrante.personal.Conserje;
 import e1.integrante.personal.Docente;
+import e1.integrante.personal.GuardaBosques;
 import e1.integrante.personal.Personal;
+import e1.integrante.residentes.Estudiante;
 import e1.integrante.residentes.Fantasma;
 import e1.integrante.residentes.Residente;
 
@@ -40,10 +42,12 @@ public class Colegio {
     public static void main(String[] args) {
         List<Integrante> lis = new ArrayList<>();
 
-        lis.add(new Conserje("pedro", "suarez", 34, 2));
-        lis.add(new Docente("aaa", "yoo", 34, Docente.asignaturas.Defensa,2));
-        lis.add(new Fantasma("juan", "lago", 34, Residente.casasHogwarts.Slytherin,2));
-
+        lis.add(new Estudiante("Hermione", "Granger", 21, Residente.casasHogwarts.Gryffindor, 3));
+        lis.add(new Fantasma("Barón", "Sanguinario", 124, Residente.casasHogwarts.Slytherin, 1));
+        lis.add(new GuardaBosques("Rubeus", "Hagrid", 43, 2));
+        lis.add(new Docente("Minerva", "McGonagall", 34, Docente.asignaturas.Transformaciones, 1));
+        lis.add(new Docente("Severus", "Snape", 44, null, 2));
+        lis.add(new Conserje("Argus", "Filch", 64, 0));
         Colegio e = new Colegio();
         System.out.println(e.imprimirRecompensas(lis));
 

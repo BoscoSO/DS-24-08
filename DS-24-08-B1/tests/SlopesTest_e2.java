@@ -1,5 +1,3 @@
-package B1_tests;
-
 import e2.Slopes;
 import org.junit.jupiter.api.Test;
 

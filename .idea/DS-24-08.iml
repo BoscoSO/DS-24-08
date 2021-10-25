@@ -60,5 +60,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module" module-name="DS-24-08-B2" scope="TEST" />
   </component>
 </module>

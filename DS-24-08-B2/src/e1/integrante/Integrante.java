@@ -8,10 +8,11 @@ public abstract class Integrante {
     private int horrocruxesDestruidos;
     private final int galeonPorHorrocrux;
 
-    public Integrante(String nombre, String apellido, int edad, int horrocruxesDestruidos,int galeonPorHorrocrux) {
+    public Integrante(String nombre, String apellido, int edad, int horrocruxesDestruidos,int galeonPorHorrocrux) throws IllegalArgumentException {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
+        if(horrocruxesDestruidos<0) throw new IllegalArgumentException("Valor invalido");
         this.horrocruxesDestruidos = horrocruxesDestruidos;
         this.galeonPorHorrocrux = galeonPorHorrocrux;
     }
