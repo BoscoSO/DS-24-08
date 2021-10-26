@@ -6,6 +6,7 @@ import e1.integrante.personal.GuardaBosques;
 import e1.integrante.residentes.Estudiante;
 import e1.integrante.residentes.Fantasma;
 import e1.integrante.residentes.Residente;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
