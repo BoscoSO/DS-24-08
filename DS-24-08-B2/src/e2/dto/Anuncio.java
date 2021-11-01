@@ -52,7 +52,7 @@ public class Anuncio implements Comparable<Anuncio> {
 
     @Override
     public int hashCode() {
-        return Objects.hash( precio_base, precio_plz_garaje, apartamento);
+        return Objects.hash(precio_base, precio_plz_garaje, apartamento);
     }
 
     @Override

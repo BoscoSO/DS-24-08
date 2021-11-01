@@ -3,66 +3,82 @@ package e3.net.implementaciones;
 import e3.net.NetworkManager;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-public class MappedNetwork implements NetworkManager {
 
-    Map<String, List<TopicOfInterest>> mappedList = new HashMap<>();
+public class TabledNetwork implements NetworkManager {
 
-    @Override
+    List<String> users = new ArrayList<>();
+    List<List<TopicOfInterest>> topics_user = new ArrayList<>();
+
+
     public void addUser(String user, List<TopicOfInterest> topicsOfInterest) throws IllegalArgumentException {
         if (topicsOfInterest == null || user == null) throw new IllegalArgumentException("Parametro null");
-        if (mappedList.containsKey(user))
-            throw new IllegalArgumentException("El usuario " + user + " ya existe");
-        mappedList.put(user, distinct(topicsOfInterest));
+        if (users.contains(user)) throw new IllegalArgumentException("El usuario "+user+" ya existe");
+
+        users.add(user);
+        topics_user.add(distinct(topicsOfInterest));
     }
 
     @Override
     public void removeUser(String user) throws IllegalArgumentException {
-        if (!mappedList.containsKey(user))
+        if (user == null) throw new IllegalArgumentException("Parametro null");
+        if (!users.contains(user))
             throw new IllegalArgumentException("No existe el usuario " + user);
-
-        mappedList.remove(user);
+        for (int i = 0; i < users.size(); i++) {
+            if (users.get(i).equals(user)) {
+                users.remove(i);
+                topics_user.remove(i);
+                return;
+            }
+        }
     }
 
     @Override
     public void addInterest(String user, TopicOfInterest topicOfInterest) throws IllegalArgumentException {
-
         if (topicOfInterest == null || user == null) throw new IllegalArgumentException("Parametro null");
-        if (!mappedList.containsKey(user))
+        if (!users.contains(user))
             throw new IllegalArgumentException("No existe el usuario " + user);
 
-        if (mappedList.get(user).contains(topicOfInterest))
-            throw new IllegalArgumentException("El usuario ya tiene este tema añadido");
-        else {
-            mappedList.get(user).add(topicOfInterest);
+        for (int i = 0; i < users.size(); i++) {
+            if (users.get(i).equals(user)) {
+                if (topics_user.get(i).contains(topicOfInterest))
+                    throw new IllegalArgumentException("El usuario ya tiene este tema añadido");
+                topics_user.get(i).add(topicOfInterest);
+                return;
+            }
         }
     }
 
     @Override
     public void removeInterest(String user, TopicOfInterest topicOfInterest) throws IllegalArgumentException {
         if (topicOfInterest == null || user == null) throw new IllegalArgumentException("Parametro null");
-        if (!mappedList.containsKey(user))
+        if (!users.contains(user))
             throw new IllegalArgumentException("No existe el usuario " + user);
 
-        if(!mappedList.get(user).remove(topicOfInterest))
-            throw new IllegalArgumentException("El usuario no tiene este tema añadido");
+        for (int i = 0; i < users.size(); i++) {
+            if (users.get(i).equals(user)) {
+                for (int c = 0; c < topics_user.get(i).size(); c++) {
+                    if (topics_user.get(i).get(c) == topicOfInterest) {
+                        topics_user.get(i).remove(c);
+                        return;
+                    }
 
-
+                }
+                throw new IllegalArgumentException("El usuario no tiene este tema añadido");
+            }
+        }
     }
 
     @Override
     public List<String> getUsers() {
-        return mappedList.keySet().stream().toList();
+        return users;
     }
 
     @Override
     public List<TopicOfInterest> getInterests() {
-
         List<TopicOfInterest> list = new ArrayList<>();
-        for (List<TopicOfInterest> lti : mappedList.values()) {
+        for (List<TopicOfInterest> lti : topics_user) {
             for (TopicOfInterest ti : lti) {
                 if (!list.contains(ti))
                     list.add(ti);
@@ -73,12 +89,13 @@ public class MappedNetwork implements NetworkManager {
 
     @Override
     public List<TopicOfInterest> getInterestsUser(String user) throws IllegalArgumentException {
-
         if (user == null) throw new IllegalArgumentException("Parametro null");
-        if (!mappedList.containsKey(user))
-            throw new IllegalArgumentException("No existe el usuario " + user);
-
-        return mappedList.get(user);
+        for (int i = 0; i < users.size(); i++) {
+            if (users.get(i).equals(user)) {
+                return topics_user.get(i);
+            }
+        }
+        throw new IllegalArgumentException("No existe el usuario " + user);
     }
 
     private List<TopicOfInterest> distinct(List<TopicOfInterest> list) {

@@ -16,9 +16,8 @@ public class AnuncioComparator implements Comparator<Anuncio> {
 
     public AnuncioComparator(MetodoComparar metod, boolean invert) {
         this.metod = Objects.requireNonNullElse(metod, MetodoComparar.NATURAL);
-        this.invert = invert;
+        this.invert = Objects.requireNonNullElse(invert, false);
     }
-
 
     @Override
     public int compare(Anuncio a1, Anuncio a2) {
@@ -35,9 +34,8 @@ public class AnuncioComparator implements Comparator<Anuncio> {
                 return Float.compare(a1.getPrecio_base(), a2.getPrecio_base());
             }
             case PRECIO_TOTAL -> {
-                float total1 = 0, total2 = 0;
-                total1 = a1.getPrecio_base() + (a1.getPrecio_plz_garaje() * a1.getApartamento().getPlazas_garaje());
-                total2 = a2.getPrecio_base() + (a2.getPrecio_plz_garaje() * a2.getApartamento().getPlazas_garaje());
+                float total1 = a1.getPrecio_base() + (a1.getPrecio_plz_garaje() * a1.getApartamento().getPlazas_garaje());
+                float total2 = a2.getPrecio_base() + (a2.getPrecio_plz_garaje() * a2.getApartamento().getPlazas_garaje());
                 return Float.compare(total1, total2);
             }
             case TAMANO -> {
