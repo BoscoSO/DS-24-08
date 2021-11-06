@@ -1,26 +1,20 @@
 package e1;
 
 import e1.integrante.Integrante;
-import e1.integrante.personal.Conserje;
-import e1.integrante.personal.Docente;
-import e1.integrante.personal.GuardaBosques;
 import e1.integrante.personal.Personal;
-import e1.integrante.residentes.Estudiante;
-import e1.integrante.residentes.Fantasma;
-import e1.integrante.residentes.Residente;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Colegio {
 
-    private List<Integrante> integrantes;
+    private final List<Integrante> integrantes;
 
     public Colegio(List<Integrante> integrantes) {
         this.integrantes = integrantes;
     }
 
     public void nuevoIntegrante(Integrante i) {
+        if(i==null)return;
         integrantes.add(i);
     }
 

@@ -20,34 +20,39 @@ public class AnuncioComparator implements Comparator<Anuncio> {
     }
 
     @Override
-    public int compare(Anuncio a1, Anuncio a2) {
+    public int compare(Anuncio anuncio1, Anuncio anuncio2) {
+        Anuncio a1=anuncio1,a2=anuncio2;
         if (invert) {
-            Anuncio tmp = a1;
-            a1=a2;
-            a2=tmp;
+            a1=anuncio2;
+            a2=anuncio1;
         }
         switch (metod) {
-            case NATURAL -> {
-                return a1.compareTo(a2);
-            }
             case PRECIO_BASE -> {
+                if(a1.getPrecio_base() == a2.getPrecio_base()) return anuncio1.compareTo(anuncio2);
                 return Float.compare(a1.getPrecio_base(), a2.getPrecio_base());
             }
             case PRECIO_TOTAL -> {
                 float total1 = a1.getPrecio_base() + (a1.getPrecio_plz_garaje() * a1.getApartamento().getPlazas_garaje());
                 float total2 = a2.getPrecio_base() + (a2.getPrecio_plz_garaje() * a2.getApartamento().getPlazas_garaje());
+                if(total1 == total2) return anuncio1.compareTo(anuncio2);
                 return Float.compare(total1, total2);
             }
             case TAMANO -> {
-                return Float.compare(a1.getApartamento().getDimensiones(), a2.getApartamento().getDimensiones());
+                float dims1 =a1.getApartamento().getDimensiones();
+                float dims2 =a2.getApartamento().getDimensiones();
+                if(dims1== dims2)return anuncio1.compareTo(anuncio2);
+                return Float.compare(dims1, dims2);
             }
             case NUM_HABITACIONES -> {
                 int total1 = a1.getApartamento().getNum_habitaciones() + a1.getApartamento().getNum_banos();
                 int total2 = a2.getApartamento().getNum_habitaciones() + a2.getApartamento().getNum_banos();
-                return Integer.compare(total1, total2);
+                if(total1 == total2) return anuncio1.compareTo(anuncio2);
+                return Integer.compare(total1,total2);
+            }
+            default -> {
+                return a1.compareTo(a2);
             }
         }
 
-        return 0;
     }
 }

@@ -57,11 +57,11 @@ public class Anuncio implements Comparable<Anuncio> {
 
     @Override
     public String toString() {
-        return "Anuncio [" +id_referencia+"]";
-              /*  "id_referencia=" + id_referencia +
+        return "Anuncio [" +id_referencia+"]"+
+                "id_referencia=" + id_referencia +
                 ", precio_base=" + precio_base +
                 ", precio_plz_garaje=" + precio_plz_garaje +
                 ", apartamento=" + apartamento +
-                '}';*/
+                "}\n";
     }
 }
