@@ -10,8 +10,9 @@ Integrantes: <br>
  
  ## Boletin 1  (DS-24-08-B1)
  
- Ejercicios StringCount, Slopes, Melody y Calculator
- 
- Tests en "tests/B1_tests/."
+  - e1. StringCount
+  - e2. Slopes
+  - e3. Melody
+  - e4. Calculator
  
  
