@@ -18,7 +18,7 @@ public class ApartamentosTest {
     @BeforeEach
     void setup() {
         g = new GestorData();
-        List<Anuncio> anuncios = new ArrayList<Anuncio>();
+        List<Anuncio> anuncios = new ArrayList<>();
         Apartamento a1=new Apartamento(3,15701,95,2,1,23,'B');
         Apartamento a2=new Apartamento(3,15702,130,3,1,64,'A');
         Apartamento a3=new Apartamento(3,15703,130,3,2,36,'C');
@@ -48,7 +48,7 @@ public class ApartamentosTest {
     @Test
     public void ordenaciones1Test() {
 
-        List<Anuncio> testadds = new ArrayList<Anuncio>();
+        List<Anuncio> testadds = new ArrayList<>();
         testadds.add(add1);testadds.add(add2);testadds.add(add3);testadds.add(add4);
         testadds.add(add5);testadds.add(add6);testadds.add(add7);testadds.add(add8);
         assertEquals(testadds,g.getAnunciosOrdenados());
@@ -97,12 +97,12 @@ public class ApartamentosTest {
     @Test
     public void ordenaciones2Test() {
 
-        List<Anuncio> testadds = new ArrayList<Anuncio>();
+        List<Anuncio> testadds = new ArrayList<>();
         testadds.add(add1);testadds.add(add2);testadds.add(add3);testadds.add(add4);
         testadds.add(add5);testadds.add(add6);testadds.add(add7);
         assertEquals(testadds, g.getAnunciosDistintosOrdenados());
 
-        testadds = new ArrayList<Anuncio>();
+        testadds = new ArrayList<>();
         testadds.add(add2);testadds.add(add3);testadds.add(add4);testadds.add(add5);
         testadds.add(add1);testadds.add(add7);testadds.add(add8);testadds.add(add6);
         g.ordenarAnuncios(AnuncioComparator.MetodoComparar.PRECIO_BASE, true);

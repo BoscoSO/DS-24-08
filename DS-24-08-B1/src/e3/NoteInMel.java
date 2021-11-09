@@ -40,15 +40,18 @@ public class NoteInMel {                    //Objeto que representa una nota en 
             case DO -> {
                 switch (accidental) {
                     case NATURAL:
-                        if (noteInMel.note == Melody.Notes.SI && noteInMel.accidental == Melody.Accidentals.SHARP && Float.compare(duration, noteInMel.duration) == 0)
+                        if (noteInMel.note == Melody.Notes.SI && noteInMel.accidental
+                                == Melody.Accidentals.SHARP && Float.compare(duration, noteInMel.duration) == 0)
                             return true;
                         break;
                     case SHARP:
-                        if (noteInMel.note == RE && noteInMel.accidental == FLAT && Float.compare(duration, noteInMel.duration) == 0)
+                        if (noteInMel.note == RE && noteInMel.accidental
+                                == FLAT && Float.compare(duration, noteInMel.duration) == 0)
                             return true;
                         break;
                     case FLAT:
-                        if (noteInMel.note == Melody.Notes.SI && noteInMel.accidental == Melody.Accidentals.NATURAL && Float.compare(duration, noteInMel.duration) == 0)
+                        if (noteInMel.note == Melody.Notes.SI && noteInMel.accidental
+                                == Melody.Accidentals.NATURAL && Float.compare(duration, noteInMel.duration) == 0)
                             return true;
                         break;
                 }
@@ -56,11 +59,13 @@ public class NoteInMel {                    //Objeto que representa una nota en 
             case RE -> {
                 switch (accidental) {
                     case SHARP:
-                        if (noteInMel.note == Melody.Notes.MI && noteInMel.accidental == FLAT && Float.compare(duration, noteInMel.duration) == 0)
+                        if (noteInMel.note == Melody.Notes.MI && noteInMel.accidental
+                                == FLAT && Float.compare(duration, noteInMel.duration) == 0)
                             return true;
                         break;
                     case FLAT:
-                        if (noteInMel.note == Melody.Notes.DO && noteInMel.accidental == Melody.Accidentals.SHARP && Float.compare(duration, noteInMel.duration) == 0)
+                        if (noteInMel.note == Melody.Notes.DO && noteInMel.accidental
+                                == Melody.Accidentals.SHARP && Float.compare(duration, noteInMel.duration) == 0)
                             return true;
                         break;
                 }

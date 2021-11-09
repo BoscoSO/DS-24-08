@@ -1,15 +1,12 @@
 package e3;
 
 import e3.net.NetworkManager;
-import e3.net.implementaciones.MappedNetwork;
-import e3.net.implementaciones.TabledNetwork;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Network {
-    private NetworkManager manager;
+    private final NetworkManager manager;
 
     public Network(NetworkManager manager) {
         this.manager = manager;
@@ -60,7 +57,7 @@ public class Network {
         return manager.getInterests();
     }
     public List<NetworkManager.TopicOfInterest> getCommonTopicsFor(List<String> users) {
-        List<NetworkManager.TopicOfInterest> list = new ArrayList<NetworkManager.TopicOfInterest>(List.of(NetworkManager.TopicOfInterest.values()));
+        List<NetworkManager.TopicOfInterest> list = new ArrayList<>(List.of(NetworkManager.TopicOfInterest.values()));
         for (String us : users) {
                 list.retainAll(manager.getInterestsUser(us));
         }
