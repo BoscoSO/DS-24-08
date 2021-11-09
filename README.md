@@ -16,3 +16,8 @@ Integrantes: <br>
   - e4. Calculator
  
  
+ ## Boletin 1  (DS-24-08-B2)
+  - e1. Colegio
+  - e2. Anuncios
+  - e3. Network
+ 
