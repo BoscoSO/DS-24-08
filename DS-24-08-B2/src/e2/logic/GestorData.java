@@ -1,13 +1,40 @@
 package e2.logic;
 
 import e2.dto.Anuncio;
-import e2.util.AnuncioComparator;
+import e2.util.*;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
 public class GestorData {
+    public enum MetodoComparar {
+        NATURAL {
+            public Comparator<Anuncio> getComparator(boolean invert) {
+                return new ComparatorNatural(invert);
+            }
+        },
+        PRECIO_BASE{
+            public Comparator<Anuncio> getComparator(boolean invert) {
+                return new ComparatorPrecioBase(invert);
+            }
+        },
+        PRECIO_TOTAL{
+            public Comparator<Anuncio> getComparator(boolean invert) {
+                return new ComparatorPrecioTotal(invert);
+            }
+        },
+        TAMANO{
+            public Comparator<Anuncio> getComparator(boolean invert) {
+                return new ComparatorTam(invert);
+            }
+        },
+        NUM_HABITACIONES{public Comparator<Anuncio> getComparator(boolean invert) {
+            return new ComparatorNumHabitaciones(invert);
+        }};
+        public abstract Comparator<Anuncio> getComparator(boolean invert);
+    }
+
 
     private Comparator<Anuncio> comparador = null;
     private List<Anuncio> anuncios = new ArrayList<>();
@@ -17,9 +44,9 @@ public class GestorData {
     }
 
 
-    public void ordenarAnuncios(AnuncioComparator.MetodoComparar metodo, boolean inverso) {
-        if (metodo == null) metodo = AnuncioComparator.MetodoComparar.NATURAL;
-        comparador = new AnuncioComparator(metodo, inverso);
+    public void ordenarAnuncios(MetodoComparar metodo, boolean inverso) {
+        if (metodo == null) metodo = MetodoComparar.NATURAL;
+        comparador=metodo.getComparator(inverso);
         anuncios.sort(comparador);
 
     }
@@ -41,7 +68,7 @@ public class GestorData {
     }
 
     public String mostrarAnuncios(List<Anuncio> anuncios) {
-        if(anuncios==null) return "";
+        if (anuncios == null) return "";
         StringBuilder cad = new StringBuilder();
         for (Anuncio a : anuncios)
             cad.append(a.toString()).append("\n");

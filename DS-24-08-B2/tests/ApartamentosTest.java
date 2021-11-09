@@ -2,7 +2,7 @@
 import e2.dto.Anuncio;
 import e2.dto.Apartamento;
 import e2.logic.GestorData;
-import e2.util.AnuncioComparator;
+import e2.util.ComparatorNatural;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -59,14 +59,14 @@ public class ApartamentosTest {
         testadds.clear();
         testadds.add(add2);testadds.add(add3);testadds.add(add4);testadds.add(add5);
         testadds.add(add1);testadds.add(add7);testadds.add(add8);testadds.add(add6);
-        g.ordenarAnuncios(AnuncioComparator.MetodoComparar.PRECIO_BASE,true);
+        g.ordenarAnuncios(GestorData.MetodoComparar.PRECIO_BASE,true);
         assertEquals(testadds,g.getAnunciosOrdenados());
 
 
         testadds.clear();
         testadds.add(add7);testadds.add(add8);testadds.add(add4);testadds.add(add5);
         testadds.add(add1);testadds.add(add2);testadds.add(add3);testadds.add(add6);
-        g.ordenarAnuncios(AnuncioComparator.MetodoComparar.PRECIO_TOTAL,true);
+        g.ordenarAnuncios(GestorData.MetodoComparar.PRECIO_TOTAL,true);
         assertEquals(testadds,g.getAnunciosOrdenados());
         assertEquals(g.mostrarAnuncios(testadds),g.mostrarAnuncios(g.getAnunciosOrdenados()));
 
@@ -74,13 +74,13 @@ public class ApartamentosTest {
         testadds.clear();
         testadds.add(add1);testadds.add(add2);testadds.add(add3);testadds.add(add4);
         testadds.add(add5);testadds.add(add6);testadds.add(add7);testadds.add(add8);
-        g.ordenarAnuncios(AnuncioComparator.MetodoComparar.NUM_HABITACIONES,false);
+        g.ordenarAnuncios(GestorData.MetodoComparar.NUM_HABITACIONES,false);
         assertEquals(g.mostrarAnuncios(testadds),g.mostrarAnuncios(g.getAnunciosOrdenados()));
 
         testadds.clear();
         testadds.add(add6);testadds.add(add7);testadds.add(add8);testadds.add(add3);
         testadds.add(add4);testadds.add(add5);testadds.add(add1);testadds.add(add2);
-        g.ordenarAnuncios(AnuncioComparator.MetodoComparar.TAMANO,true);
+        g.ordenarAnuncios(GestorData.MetodoComparar.TAMANO,true);
         assertEquals(g.mostrarAnuncios(testadds),g.mostrarAnuncios(g.getAnunciosOrdenados()));
 
 
@@ -105,7 +105,7 @@ public class ApartamentosTest {
         testadds = new ArrayList<>();
         testadds.add(add2);testadds.add(add3);testadds.add(add4);testadds.add(add5);
         testadds.add(add1);testadds.add(add7);testadds.add(add8);testadds.add(add6);
-        g.ordenarAnuncios(AnuncioComparator.MetodoComparar.PRECIO_BASE, true);
+        g.ordenarAnuncios(GestorData.MetodoComparar.PRECIO_BASE, true);
         assertEquals(testadds, g.getAnunciosOrdenados());
     }
     @Test
