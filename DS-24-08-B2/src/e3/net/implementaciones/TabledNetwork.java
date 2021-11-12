@@ -8,8 +8,8 @@ import java.util.List;
 
 public class TabledNetwork implements NetworkManager {
 
-    List<String> users = new ArrayList<>();
-    List<List<TopicOfInterest>> topics_user = new ArrayList<>();
+    private final List<String> users = new ArrayList<>();
+    private final List<List<TopicOfInterest>> topics_user = new ArrayList<>();
 
 
     public void addUser(String user, List<TopicOfInterest> topicsOfInterest) throws IllegalArgumentException {

@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class MappedNetwork implements NetworkManager {
 
-    Map<String, List<TopicOfInterest>> mappedList = new HashMap<>();
+    private final Map<String, List<TopicOfInterest>> mappedList = new HashMap<>();
 
     @Override
     public void addUser(String user, List<TopicOfInterest> topicsOfInterest) throws IllegalArgumentException {

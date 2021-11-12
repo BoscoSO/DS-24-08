@@ -26,27 +26,21 @@ public class Apartamento {
     public int getPlazas_garaje() {
         return plazas_garaje;
     }
-
     public int getCodigo_postal() {
         return codigo_postal;
     }
-
     public float getDimensiones() {
         return dimensiones;
     }
-
     public int getNum_habitaciones() {
         return num_habitaciones;
     }
-
     public int getNum_banos() {
         return num_banos;
     }
-
     public int getNum_portal() {
         return num_portal;
     }
-
     public char getLetra() {
         return letra;
     }

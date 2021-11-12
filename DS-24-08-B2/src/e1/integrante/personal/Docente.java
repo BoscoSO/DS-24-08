@@ -36,7 +36,7 @@ public class Docente extends Personal {
     }
 
 
-    public asignaturas materia_impartida;
+    private final asignaturas materia_impartida;
 
     public Docente(String nombre, String apellido, int edad, asignaturas materia_impartida,int horrocruxesDestruidos) throws IllegalArgumentException  {
         super(nombre, apellido, edad,horrocruxesDestruidos,50);

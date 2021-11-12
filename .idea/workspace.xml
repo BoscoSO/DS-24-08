@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="diagramas uml finales">
-      <change afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData$MetodoComparar.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/util/ComparatorNatural.class" afterDir="false" />
+    <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-B2/src/e1/integrante/personal/Docente.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-B2/src/e1/integrante/personal/Docente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-B2/src/e2/dto/Apartamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-B2/src/e2/dto/Apartamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-B2/src/e3/net/implementaciones/MappedNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-B2/src/e3/net/implementaciones/MappedNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-B2/src/e3/net/implementaciones/TabledNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-B2/src/e3/net/implementaciones/TabledNetwork.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -414,7 +417,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636737701910</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="diagramas uml finales">
+      <created>1636738368151</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1636738368151</updated>
+    </task>
+    <task id="LOCAL-00036" summary="update">
+      <created>1636738389017</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1636738389017</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -445,9 +462,9 @@
     <MESSAGE value="e1 B2 sin tests" />
     <MESSAGE value="e2 B2 sin tests" />
     <MESSAGE value="tests and more" />
-    <MESSAGE value="update" />
     <MESSAGE value="diagramas uml finales" />
-    <option name="LAST_COMMIT_MESSAGE" value="diagramas uml finales" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_B2__2_.ic" NAME="All in DS-24-08-B2 (2) Coverage Results" MODIFIED="1635246569073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
