@@ -1,3 +1,5 @@
+package e4;
+
 import e4.Calculator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

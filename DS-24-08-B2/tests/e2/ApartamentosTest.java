@@ -1,3 +1,4 @@
+package e2;
 
 import e2.dto.Anuncio;
 import e2.dto.Apartamento;
@@ -48,6 +49,7 @@ public class ApartamentosTest {
     @Test
     public void ordenaciones1Test() {
 
+        //Metodo Natural
         List<Anuncio> testadds = new ArrayList<>();
         testadds.add(add1);testadds.add(add2);testadds.add(add3);testadds.add(add4);
         testadds.add(add5);testadds.add(add6);testadds.add(add7);testadds.add(add8);
@@ -55,35 +57,68 @@ public class ApartamentosTest {
 
         testadds.remove(add8);
         assertEquals(testadds,g.getAnunciosDistintosOrdenados());
+        testadds.clear();
+        testadds.add(add8);testadds.add(add7);testadds.add(add6);testadds.add(add5);
+        testadds.add(add4);testadds.add(add3);testadds.add(add2);testadds.add(add1);
+        g.ordenarAnuncios(GestorData.MetodoComparar.NATURAL,true);
+        assertEquals(testadds,g.getAnunciosOrdenados());
 
+        //Metodo Precio Base
         testadds.clear();
         testadds.add(add2);testadds.add(add3);testadds.add(add4);testadds.add(add5);
         testadds.add(add1);testadds.add(add7);testadds.add(add8);testadds.add(add6);
         g.ordenarAnuncios(GestorData.MetodoComparar.PRECIO_BASE,true);
         assertEquals(testadds,g.getAnunciosOrdenados());
+        testadds.clear();
+        testadds.add(add6);testadds.add(add7);testadds.add(add8);testadds.add(add1);
+        testadds.add(add4);testadds.add(add5);testadds.add(add2);testadds.add(add3);
+        g.ordenarAnuncios(GestorData.MetodoComparar.PRECIO_BASE,false);
+        assertEquals(testadds,g.getAnunciosOrdenados());
 
-
+        //Metodo Precio Total
         testadds.clear();
         testadds.add(add7);testadds.add(add8);testadds.add(add4);testadds.add(add5);
         testadds.add(add1);testadds.add(add2);testadds.add(add3);testadds.add(add6);
         g.ordenarAnuncios(GestorData.MetodoComparar.PRECIO_TOTAL,true);
         assertEquals(testadds,g.getAnunciosOrdenados());
         assertEquals(g.mostrarAnuncios(testadds),g.mostrarAnuncios(g.getAnunciosOrdenados()));
+        testadds.clear();
+        testadds.add(add6);testadds.add(add2);testadds.add(add3);testadds.add(add1);
+        testadds.add(add4);testadds.add(add5);testadds.add(add7);testadds.add(add8);
+        g.ordenarAnuncios(GestorData.MetodoComparar.PRECIO_TOTAL,false);
+        assertEquals(testadds,g.getAnunciosOrdenados());
 
 
+        //Metodo Num Habitaciones
         testadds.clear();
         testadds.add(add1);testadds.add(add2);testadds.add(add3);testadds.add(add4);
         testadds.add(add5);testadds.add(add6);testadds.add(add7);testadds.add(add8);
         g.ordenarAnuncios(GestorData.MetodoComparar.NUM_HABITACIONES,false);
         assertEquals(g.mostrarAnuncios(testadds),g.mostrarAnuncios(g.getAnunciosOrdenados()));
+        testadds.clear();
+        testadds.add(add6); testadds.add(add7);testadds.add(add8); testadds.add(add5);
+        testadds.add(add3);testadds.add(add4); testadds.add(add1);testadds.add(add2);
+        g.ordenarAnuncios(GestorData.MetodoComparar.NUM_HABITACIONES,true);
+        assertEquals(testadds,g.getAnunciosOrdenados());
+        assertEquals(g.mostrarAnuncios(testadds),g.mostrarAnuncios(g.getAnunciosOrdenados()));
 
+
+        //Metodo Tamaño
         testadds.clear();
         testadds.add(add6);testadds.add(add7);testadds.add(add8);testadds.add(add3);
         testadds.add(add4);testadds.add(add5);testadds.add(add1);testadds.add(add2);
         g.ordenarAnuncios(GestorData.MetodoComparar.TAMANO,true);
         assertEquals(g.mostrarAnuncios(testadds),g.mostrarAnuncios(g.getAnunciosOrdenados()));
+        testadds.clear();
+        testadds.add(add1);testadds.add(add2); testadds.add(add3);testadds.add(add4);
+        testadds.add(add5);testadds.add(add6);testadds.add(add7);testadds.add(add8);
+        g.ordenarAnuncios(GestorData.MetodoComparar.TAMANO,false);
+        assertEquals(g.mostrarAnuncios(testadds),g.mostrarAnuncios(g.getAnunciosOrdenados()));
 
 
+
+
+        //Metodo null
         testadds.clear();
         testadds.add(add1);testadds.add(add2);testadds.add(add3);testadds.add(add4);
         testadds.add(add5);testadds.add(add6);testadds.add(add7);

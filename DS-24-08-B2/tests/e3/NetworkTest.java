@@ -1,3 +1,4 @@
+package e3;
 
 import e3.Network;
 import e3.net.NetworkManager;
@@ -13,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
-public class NetworkTest_e3 {
+public class NetworkTest {
     private Network tabledNet;
     private Network mappedNet;
 
@@ -45,7 +46,7 @@ public class NetworkTest_e3 {
     }
 
     @Test
-    public void test1() {
+    public void testParalelo() {
         assertEquals(tabledNet.showUsersInfo(),mappedNet.showUsersInfo());
         assertEquals(tabledNet.getTopicsFromUser("Luis"),mappedNet.getTopicsFromUser("Luis"));
         assertEquals(tabledNet.getCommonTopicsFor(List.of(new String[]{"Luis", "Pedro"})),
@@ -124,7 +125,7 @@ public class NetworkTest_e3 {
         assertThrows(IllegalArgumentException.class, () ->tabledNet.deleteTopicFromUser(null, null));
         assertThrows(IllegalArgumentException.class, () ->tabledNet.getUsersForTopic(null));
         assertThrows(IllegalArgumentException.class, () ->tabledNet.getCommonTopicsFor(List.of(new String[]{"Luis", "adfuo"})));
-        //assertThrows(IllegalArgumentException.class, () ->tabledNet.getCommonTopicsFor(List.of(new String[]{"Luis", null})));
+        assertThrows(IllegalArgumentException.class, () ->tabledNet.getTopicsFromUser(null));
 
 
 

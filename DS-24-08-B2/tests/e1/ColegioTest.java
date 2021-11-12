@@ -1,3 +1,5 @@
+package e1;
+
 import e1.Colegio;
 import e1.integrante.Integrante;
 import e1.integrante.personal.Conserje;
@@ -14,7 +16,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ColegioTest_e1 {
+class ColegioTest {
     private Colegio colegio;
     private List<Integrante> lis = new ArrayList<>();
 

@@ -1,3 +1,5 @@
+package e3;
+
 import e3.Melody;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
