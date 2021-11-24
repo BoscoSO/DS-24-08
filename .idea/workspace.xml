@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="update">
+    <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="entrega defensa">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-B2/src/e1/integrante/personal/Docente.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-B2/src/e1/integrante/personal/Docente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-B2/src/e2/dto/Apartamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-B2/src/e2/dto/Apartamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-B2/src/e3/net/implementaciones/MappedNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-B2/src/e3/net/implementaciones/MappedNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-B2/src/e3/net/implementaciones/TabledNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-B2/src/e3/net/implementaciones/TabledNetwork.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +14,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -58,6 +57,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="e1.util" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Propietario\inteli-proyects\DS-24-08\DS-24-08-B2" />
       <recent name="D:\Propietario\inteli-proyects\DS-24-08\tests\B1_tests" />
@@ -85,12 +87,26 @@
       <recent name="e2.dto" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="e1.util" />
       <recent name="e2.util" />
       <recent name="B2_tests" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in DS-24-08-B2">
+  <component name="RunManager" selected="Application.GestorBilletes">
+    <configuration name="GestorBilletes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="e1.lgc.GestorBilletes" />
+      <module name="DS-24-08-PD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e1.lgc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in DS-24-08-B2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DS-24-08-B2" />
       <extension name="coverage" sample_coverage="false" />
@@ -143,30 +159,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ColegioTest.testExceptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DS-24-08-B2" />
-      <option name="PACKAGE_NAME" value="e1" />
-      <option name="MAIN_CLASS_NAME" value="e1.ColegioTest" />
-      <option name="METHOD_NAME" value="testExceptions" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.All in DS-24-08-B2" />
       <item itemvalue="JUnit.ApartamentosTest.ordenaciones1Test" />
       <item itemvalue="JUnit.ApartamentosTest.ordenaciones2Test" />
       <item itemvalue="JUnit.ApartamentosTest.testEquals" />
-      <item itemvalue="JUnit.ColegioTest.testExceptions" />
+      <item itemvalue="Application.GestorBilletes" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GestorBilletes" />
         <item itemvalue="JUnit.All in DS-24-08-B2" />
         <item itemvalue="JUnit.ApartamentosTest.testEquals" />
         <item itemvalue="JUnit.ApartamentosTest.ordenaciones1Test" />
         <item itemvalue="JUnit.ApartamentosTest.ordenaciones2Test" />
-        <item itemvalue="JUnit.ColegioTest.testExceptions" />
       </list>
     </recent_temporary>
   </component>
@@ -431,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636738389017</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="entrega defensa">
+      <created>1636752140594</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1636752140594</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,7 +477,8 @@
     <MESSAGE value="tests and more" />
     <MESSAGE value="diagramas uml finales" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="entrega defensa" />
+    <option name="LAST_COMMIT_MESSAGE" value="entrega defensa" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_B2__2_.ic" NAME="All in DS-24-08-B2 (2) Coverage Results" MODIFIED="1635246569073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
