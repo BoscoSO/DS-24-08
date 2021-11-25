@@ -5,6 +5,7 @@ import e1.dto.Billete;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 public class FiltroPrecio implements FiltroBilletes {
     private final double precio;
@@ -16,7 +17,7 @@ public class FiltroPrecio implements FiltroBilletes {
 
 
     public FiltroPrecio(double precio, List<Tipo> tipo) {           //Solo dos clausulas a la vez < |> | <=| >=| ==
-        this.precio = precio;
+        this.precio = Objects.requireNonNullElse(precio,0.0);
         clausulas = tipo;
     }
 

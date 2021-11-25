@@ -1,17 +1,12 @@
 package e1.dto;
 
-public class Billete {
-    private final double precio;
-    private final String destino;
-    private final String origen;
-    private final String fecha;                 //de la forma dd/mm/yy
-
-
-    public Billete(double precio, String origen, String destino, String fecha) {
-        this.precio = precio;
-        this.destino = destino;
-        this.origen = origen;
-        this.fecha = fecha;
+public record Billete(double precio, String origen, String destino, String fecha) {
+    /**
+     * @throws IllegalArgumentException
+     */
+    public Billete {
+        if (origen == null || destino == null || fecha == null) throw new IllegalArgumentException("parametro null");
+        if (precio <= 0.0) throw new IllegalArgumentException("El precio no puede ser negativo o 0");
     }
 
     public double getPrecio() {
@@ -32,9 +27,6 @@ public class Billete {
 
     @Override
     public String toString() {
-        return "Billete:" + precio +
-                "€ | " + origen +
-                " --> " + destino +
-                " |" + fecha + "|\n";
+        return "Billete: " + String.format("%.2f", precio) + "€ | " + origen + " --> " + destino + " |" + fecha + "|\n";
     }
 }

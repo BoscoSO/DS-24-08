@@ -48,6 +48,8 @@ public class GestorBilletes {
         this.billetes = billetes;
     }
 
+    //recibe una lista ya filtrada, o null si es la primera vez, un clausula para unir esa lista con la próxima, o null si es la primera vez
+    //una lista de filtros que aplicar y una clausula con la que combinar esos filtros (todos)
     public List<Billete> filtra(List<Billete> b1, Clausula clausula, List<FiltroBilletes> filtros, Clausula clausulaFiltros) throws IllegalStateException, IllegalArgumentException { //recomendamos de 2 en 2, pero podrian ser mas
         if (billetes.isEmpty()) throw new IllegalStateException("No hay billetes que filtrar");
         if (filtros == null || clausulaFiltros == null)
@@ -85,65 +87,5 @@ public class GestorBilletes {
         return laux;
     }
 
-    public static void main(String[] args) {
-        GestorBilletes gb=new GestorBilletes();
-        List<Billete> billetes=new ArrayList<>();
-        double precio=6.43;
-        for(int i=0;i<5;i++) {
-            billetes.add(new Billete(precio, "Lugo", "Coruña", "14/04/21"));
-            billetes.add(new Billete(precio, "Lugo", "Orense", "10/04/21"));
-            billetes.add(new Billete(precio, "Lugo", "Santiago", "10/04/21"));
-            billetes.add(new Billete(precio, "Lugo", "Vigo", "12/04/21"));
-            precio+=6;
-            billetes.add(new Billete(precio, "Coruña", "Lugo", "14/04/21"));
-            billetes.add(new Billete(precio, "Coruña", "Orense", "09/04/21"));
-            billetes.add(new Billete(precio, "Coruña", "Santiago", "18/04/21"));
-            billetes.add(new Billete(precio, "Coruña", "Vigo", "10/04/21"));
 
-            billetes.add(new Billete(precio, "Orense", "Lugo", "14/04/21"));
-            billetes.add(new Billete(precio, "Orense", "Coruña", "12/04/21"));
-            billetes.add(new Billete(precio, "Orense", "Santiago", "11/04/21"));
-            billetes.add(new Billete(precio, "Orense", "Vigo", "09/04/21"));
-            precio+=6;
-            billetes.add(new Billete(precio, "Santiago", "Lugo", "09/04/21"));
-            billetes.add(new Billete(precio, "Santiago", "Coruña", "18/04/21"));
-            billetes.add(new Billete(precio, "Santiago", "Orense", "08/04/21"));
-            billetes.add(new Billete(precio, "Santiago", "Vigo", "14/04/21"));
-
-            billetes.add(new Billete(precio, "Vigo", "Lugo", "16/04/21"));
-            billetes.add(new Billete(precio, "Vigo", "Coruña", "12/04/21"));
-            billetes.add(new Billete(precio, "Vigo", "Orense", "15/04/21"));
-            billetes.add(new Billete(precio, "Vigo", "Santiago", "17/04/21"));
-            precio+=5;
-        }
-        gb.setBilletes(billetes);
-
-        List<Billete> l = null;
-        l=gb.filtra(null,null,List.of(new FiltroOrigen("Coruña"),new FiltroDestino("Santiago")),Clausula.OR);
-
-        l=gb.filtra(l,Clausula.AND,List.of(new FiltroFecha("17/04/21"),new FiltroFecha("18/04/21"),new FiltroFecha("10/04/21")),Clausula.OR);
-
-        l=gb.filtra(l,Clausula.AND,List.of(new FiltroPrecio(46.43,List.of(FiltroPrecio.Tipo.IGUAL, FiltroPrecio.Tipo.MAYOR))),Clausula.OR);
-        for(Billete b:l){
-            System.out.println(b.toString());
-        }
-        /*
-        l=gb.filtra(null,null,List.of(new FiltroOrigen("Coruña"),new FiltroOrigen("Santiago")),Clausula.OR);
-
-
-        l=gb.filtra(l,Clausula.AND,List.of(new FiltroDestino("Orense")),Clausula.OR);
-
-
-        l=gb.filtra(l,Clausula.AND,List.of(new FiltroPrecio(28,List.of(FiltroPrecio.Tipo.MENOR, FiltroPrecio.Tipo.IGUAL))),Clausula.OR);
-
-
-
-        l=gb.filtra(l,Clausula.AND,List.of(new FiltroFecha("08/04/21"),new FiltroFecha("09/04/21")),Clausula.OR);
-
-        for(Billete b:l){
-            System.out.println(b.toString());
-        }
-        */
-
-    }
 }

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="entrega defensa">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="Practica Diseño e1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/DS-24-08-PD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/DS-24-08-PD.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/dto/Billete.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/dto/Billete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/lgc/GestorBilletes.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/lgc/GestorBilletes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroDestino.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroDestino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroFecha.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroFecha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroOrigen.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroOrigen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroPrecio.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroPrecio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,12 +20,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Bosco" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -40,7 +50,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -93,7 +103,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GestorBilletes">
+  <component name="RunManager" selected="JUnit.BilletesTest">
     <configuration name="GestorBilletes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="e1.lgc.GestorBilletes" />
       <module name="DS-24-08-PD" />
@@ -103,17 +113,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in DS-24-08-B2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DS-24-08-B2" />
-      <extension name="coverage" sample_coverage="false" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,50 +128,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApartamentosTest.ordenaciones1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DS-24-08-B2" />
-      <option name="PACKAGE_NAME" value="e2" />
-      <option name="MAIN_CLASS_NAME" value="e2.ApartamentosTest" />
-      <option name="METHOD_NAME" value="ordenaciones1Test" />
+    <configuration name="BilletesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DS-24-08-PD" />
+      <extension name="coverage" sample_coverage="false">
+        <pattern>
+          <option name="PATTERN" value="e1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="e1" />
+      <option name="MAIN_CLASS_NAME" value="e1.BilletesTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BilletesTest.testBilletesExceptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DS-24-08-PD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="e1" />
+      <option name="MAIN_CLASS_NAME" value="e1.BilletesTest" />
+      <option name="METHOD_NAME" value="testBilletesExceptions" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApartamentosTest.ordenaciones2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DS-24-08-B2" />
-      <option name="PACKAGE_NAME" value="e2" />
-      <option name="MAIN_CLASS_NAME" value="e2.ApartamentosTest" />
-      <option name="METHOD_NAME" value="ordenaciones2Test" />
+    <configuration name="BilletesTest.testFiltraExceptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DS-24-08-PD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="e1" />
+      <option name="MAIN_CLASS_NAME" value="e1.BilletesTest" />
+      <option name="METHOD_NAME" value="testFiltraExceptions" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApartamentosTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DS-24-08-B2" />
-      <option name="PACKAGE_NAME" value="e2" />
-      <option name="MAIN_CLASS_NAME" value="e2.ApartamentosTest" />
-      <option name="METHOD_NAME" value="testEquals" />
+    <configuration name="BilletesTest.testFiltrados" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DS-24-08-PD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="e1" />
+      <option name="MAIN_CLASS_NAME" value="e1.BilletesTest" />
+      <option name="METHOD_NAME" value="testFiltrados" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.All in DS-24-08-B2" />
-      <item itemvalue="JUnit.ApartamentosTest.ordenaciones1Test" />
-      <item itemvalue="JUnit.ApartamentosTest.ordenaciones2Test" />
-      <item itemvalue="JUnit.ApartamentosTest.testEquals" />
       <item itemvalue="Application.GestorBilletes" />
+      <item itemvalue="JUnit.BilletesTest.testFiltrados" />
+      <item itemvalue="JUnit.BilletesTest.testBilletesExceptions" />
+      <item itemvalue="JUnit.BilletesTest.testFiltraExceptions" />
+      <item itemvalue="JUnit.BilletesTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BilletesTest" />
+        <item itemvalue="JUnit.BilletesTest.testFiltrados" />
+        <item itemvalue="JUnit.BilletesTest.testFiltraExceptions" />
+        <item itemvalue="JUnit.BilletesTest.testBilletesExceptions" />
         <item itemvalue="Application.GestorBilletes" />
-        <item itemvalue="JUnit.All in DS-24-08-B2" />
-        <item itemvalue="JUnit.ApartamentosTest.testEquals" />
-        <item itemvalue="JUnit.ApartamentosTest.ordenaciones1Test" />
-        <item itemvalue="JUnit.ApartamentosTest.ordenaciones2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -444,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636752140594</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Practica Diseño e1">
+      <created>1637783209819</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1637783209819</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -478,10 +518,14 @@
     <MESSAGE value="diagramas uml finales" />
     <MESSAGE value="update" />
     <MESSAGE value="entrega defensa" />
-    <option name="LAST_COMMIT_MESSAGE" value="entrega defensa" />
+    <MESSAGE value="Practica Diseño e1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Practica Diseño e1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_B2__2_.ic" NAME="All in DS-24-08-B2 (2) Coverage Results" MODIFIED="1635246569073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/DS_24_08$BilletesTest.ic" NAME="BilletesTest Coverage Results" MODIFIED="1637841045222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>e1.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_B1.ic" NAME="All in DS-24-08-B1 Coverage Results" MODIFIED="1635421976242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/DS_24_08$ApartamentosTest_ordenaciones2Test.ic" NAME="ApartamentosTest.ordenaciones2Test Coverage Results" MODIFIED="1636224622738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_B2__1_.ic" NAME="All in DS-24-08-B2 (1) Coverage Results" MODIFIED="1635246475786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

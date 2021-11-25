@@ -4,12 +4,13 @@ import e1.dto.Billete;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class FiltroFecha implements FiltroBilletes{
     private final String fecha;
 
     public FiltroFecha(String fecha) {
-        this.fecha = fecha;
+        this.fecha = Objects.requireNonNullElse(fecha,"");
     }
 
     @Override

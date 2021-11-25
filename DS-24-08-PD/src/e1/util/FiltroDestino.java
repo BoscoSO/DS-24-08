@@ -4,12 +4,13 @@ import e1.dto.Billete;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class FiltroDestino implements FiltroBilletes{
     private final String destino;
 
     public FiltroDestino(String destino) {
-        this.destino = destino;
+        this.destino = Objects.requireNonNullElse(destino,"");
     }
 
     @Override
