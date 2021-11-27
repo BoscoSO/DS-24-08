@@ -3,13 +3,59 @@
   <component name="ChangeListManager">
     <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="Practica Diseño e1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/DS-24-08-PD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/DS-24-08-PD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/dto/Billete.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/dto/Billete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/lgc/GestorBilletes.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/lgc/GestorBilletes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroDestino.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroDestino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroFecha.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroFecha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroOrigen.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroOrigen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroPrecio.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroPrecio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/tests/e1/BilletesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/tests/e1/BilletesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/Colegio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/Colegio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/Integrante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/Integrante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Conserje.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Conserje.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Docente$asignaturas$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Docente$asignaturas$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Docente$asignaturas$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Docente$asignaturas$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Docente$asignaturas$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Docente$asignaturas$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Docente$asignaturas$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Docente$asignaturas$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Docente$asignaturas$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Docente$asignaturas$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Docente$asignaturas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Docente$asignaturas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Docente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Docente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/GuardaBosques.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/GuardaBosques.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Personal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/personal/Personal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/residentes/Estudiante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/residentes/Estudiante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/residentes/Fantasma.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/residentes/Fantasma.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/residentes/Residente$casasHogwarts.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/residentes/Residente$casasHogwarts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/residentes/Residente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e1/integrante/residentes/Residente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/dto/Anuncio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/dto/Anuncio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/dto/Apartamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/dto/Apartamento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData$MetodoComparar$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData$MetodoComparar$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData$MetodoComparar$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData$MetodoComparar$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData$MetodoComparar$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData$MetodoComparar$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData$MetodoComparar$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData$MetodoComparar$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData$MetodoComparar$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData$MetodoComparar$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData$MetodoComparar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData$MetodoComparar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/logic/GestorData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/util/ComparatorNatural.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/util/ComparatorNatural.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/util/ComparatorNumHabitaciones.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/util/ComparatorNumHabitaciones.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/util/ComparatorPrecioBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/util/ComparatorPrecioBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/util/ComparatorPrecioTotal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/util/ComparatorPrecioTotal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/util/ComparatorTam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e2/util/ComparatorTam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e3/Network.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e3/Network.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e3/net/NetworkManager$TopicOfInterest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e3/net/NetworkManager$TopicOfInterest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e3/net/NetworkManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e3/net/NetworkManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e3/net/implementaciones/MappedNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e3/net/implementaciones/MappedNetwork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B2/e3/net/implementaciones/tabledNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-B2/e3/net/implementaciones/tabledNetwork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Billete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Billete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/lgc/GestorBilletes$Clausula$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/lgc/GestorBilletes$Clausula$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/lgc/GestorBilletes$Clausula.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/lgc/GestorBilletes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/lgc/GestorBilletes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroDestino.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroDestino.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroFecha.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroFecha.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroOrigen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroOrigen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroPrecio$Tipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroPrecio$Tipo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroPrecio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroPrecio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DS-24-08-B2/e1/ColegioTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DS-24-08-B2/e1/ColegioTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DS-24-08-B2/e2/ApartamentosTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DS-24-08-B2/e2/ApartamentosTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DS-24-08-B2/e3/NetworkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DS-24-08-B2/e3/NetworkTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DS-24-08-PD/e1/BilletesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DS-24-08-PD/e1/BilletesTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,20 +149,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BilletesTest">
-    <configuration name="GestorBilletes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="e1.lgc.GestorBilletes" />
-      <module name="DS-24-08-PD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="e1.lgc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in DS-24-08-PD">
     <configuration name="All in DS-24-08-B2" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="DS-24-08-B2" />
       <extension name="coverage" sample_coverage="false" />
@@ -128,18 +161,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BilletesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in DS-24-08-PD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DS-24-08-PD" />
-      <extension name="coverage" sample_coverage="false">
-        <pattern>
-          <option name="PATTERN" value="e1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="e1" />
-      <option name="MAIN_CLASS_NAME" value="e1.BilletesTest" />
+      <extension name="coverage" sample_coverage="false" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,7 +204,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BilletesTest.testFiltrados" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BilletesTest.testFiltrados1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DS-24-08-PD" />
       <extension name="coverage">
         <pattern>
@@ -186,26 +214,43 @@
       </extension>
       <option name="PACKAGE_NAME" value="e1" />
       <option name="MAIN_CLASS_NAME" value="e1.BilletesTest" />
-      <option name="METHOD_NAME" value="testFiltrados" />
+      <option name="METHOD_NAME" value="testFiltrados1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BilletesTest.testFiltrados2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DS-24-08-PD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="e1" />
+      <option name="MAIN_CLASS_NAME" value="e1.BilletesTest" />
+      <option name="METHOD_NAME" value="testFiltrados2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GestorBilletes" />
-      <item itemvalue="JUnit.BilletesTest.testFiltrados" />
-      <item itemvalue="JUnit.BilletesTest.testBilletesExceptions" />
+      <item itemvalue="JUnit.All in DS-24-08-B2" />
       <item itemvalue="JUnit.BilletesTest.testFiltraExceptions" />
-      <item itemvalue="JUnit.BilletesTest" />
+      <item itemvalue="JUnit.BilletesTest.testFiltrados2" />
+      <item itemvalue="JUnit.BilletesTest.testFiltrados1" />
+      <item itemvalue="JUnit.BilletesTest.testBilletesExceptions" />
+      <item itemvalue="JUnit.All in DS-24-08-PD" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BilletesTest" />
-        <item itemvalue="JUnit.BilletesTest.testFiltrados" />
+        <item itemvalue="JUnit.All in DS-24-08-PD" />
+        <item itemvalue="JUnit.BilletesTest.testFiltrados1" />
         <item itemvalue="JUnit.BilletesTest.testFiltraExceptions" />
+        <item itemvalue="JUnit.BilletesTest.testFiltrados2" />
         <item itemvalue="JUnit.BilletesTest.testBilletesExceptions" />
-        <item itemvalue="Application.GestorBilletes" />
       </list>
     </recent_temporary>
   </component>
@@ -484,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637783209819</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Practica Diseño e1">
+      <created>1637841362048</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1637841362048</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -522,6 +574,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Practica Diseño e1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DS_24_08$BilletesTest_testFiltraExceptions.ic" NAME="BilletesTest.testFiltraExceptions Coverage Results" MODIFIED="1637950211403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>e1.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_B2__2_.ic" NAME="All in DS-24-08-B2 (2) Coverage Results" MODIFIED="1635246569073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$BilletesTest.ic" NAME="BilletesTest Coverage Results" MODIFIED="1637841045222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
       <FILTER>e1.*</FILTER>
@@ -530,7 +585,7 @@
     <SUITE FILE_PATH="coverage/DS_24_08$ApartamentosTest_ordenaciones2Test.ic" NAME="ApartamentosTest.ordenaciones2Test Coverage Results" MODIFIED="1636224622738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_B2__1_.ic" NAME="All in DS-24-08-B2 (1) Coverage Results" MODIFIED="1635246475786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$ApartamentosTest_testEquals.ic" NAME="ApartamentosTest.testEquals Coverage Results" MODIFIED="1636226919696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_B2.ic" NAME="All in DS-24-08-B2 Coverage Results" MODIFIED="1636735441028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_B2.ic" NAME="All in DS-24-08-B2 Coverage Results" MODIFIED="1637950220945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/DS_24_08$NetworkTest_e3_test1.ic" NAME="NetworkTest_e3.test1 Coverage Results" MODIFIED="1635612877040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$ColegioTest_e1.ic" NAME="ColegioTest_e1 Coverage Results" MODIFIED="1635421922970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08.ic" NAME="All in DS-24-08 Coverage Results" MODIFIED="1633535140627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -538,5 +593,6 @@
     <SUITE FILE_PATH="coverage/DS_24_08$ApartamentosTest_ordenaciones1Test.ic" NAME="ApartamentosTest.ordenaciones1Test Coverage Results" MODIFIED="1636223907160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$NetworkTest_e3_testExceptions.ic" NAME="NetworkTest_e3.testExceptions Coverage Results" MODIFIED="1635789356929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_B2_test.ic" NAME="All in DS-24-08-B2 test Coverage Results" MODIFIED="1635246629256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_PD.ic" NAME="All in DS-24-08-PD Coverage Results" MODIFIED="1637951169302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

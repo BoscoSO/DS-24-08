@@ -18,7 +18,7 @@ public class FiltroPrecio implements FiltroBilletes {
 
     public FiltroPrecio(double precio, List<Tipo> tipo) {           //Solo dos clausulas a la vez < |> | <=| >=| ==
         this.precio = Objects.requireNonNullElse(precio,0.0);
-        clausulas = tipo;
+        clausulas =Objects.requireNonNullElse(tipo,Collections.emptyList());
     }
 
     @Override
