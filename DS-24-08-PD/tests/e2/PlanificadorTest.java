@@ -44,7 +44,6 @@ public class PlanificadorTest {
 
     }
 
-
     @Test
     void testOrdenesExceptions() {
         OrdenPlanificacion orden1, orden2, orden3;
@@ -77,9 +76,9 @@ public class PlanificadorTest {
 
         pt.procesarDependencias("entrada2.txt");
 
-        //assertEquals("A - B - I - C - D - X - F", pt.ordenaSegun(new OrdenDepFuerte()));
-     //   assertEquals("A - B - C - D - I - X - F", pt.ordenaSegun(new OrdenDepDebil()));
-       // assertEquals("A - I - B - C - X - D - F", pt.ordenaSegun(new OrdenJerarquico()));
+        assertEquals("A - B - I - C - D - X - F", pt.ordenaSegun(new OrdenDepFuerte()));
+        assertEquals("A - B - C - D - F - I - X", pt.ordenaSegun(new OrdenDepDebil()));
+        assertEquals("A - I - B - C - X - D - F", pt.ordenaSegun(new OrdenJerarquico()));
     }
 
 }

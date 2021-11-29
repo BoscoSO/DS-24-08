@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="Practica Diseño e2, sin tests">
+    <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="Practica Diseño e2, con tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/dto/Tarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/dto/Tarea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/lgc/PlanificadorTareas.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/lgc/PlanificadorTareas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenDepDebil.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenDepDebil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenDepFuerte.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenDepFuerte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenJerarquico.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenJerarquico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenPlanificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenPlanificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/resources/entrada2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/resources/entrada2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/tests/e2/PlanificadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/tests/e2/PlanificadorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/dto/Tarea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/dto/Tarea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/lgc/PlanificadorTareas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/lgc/PlanificadorTareas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenDepDebil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenDepDebil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenDepFuerte.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenDepFuerte.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenJerarquico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenJerarquico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenPlanificacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenPlanificacion.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -510,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638049133591</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Practica Diseño e2, con tests">
+      <created>1638210874953</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1638210874953</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -546,7 +556,8 @@
     <MESSAGE value="entrega defensa" />
     <MESSAGE value="Practica Diseño e1" />
     <MESSAGE value="Practica Diseño e2, sin tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Practica Diseño e2, sin tests" />
+    <MESSAGE value="Practica Diseño e2, con tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Practica Diseño e2, con tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DS_24_08$BilletesTest_testFiltraExceptions.ic" NAME="BilletesTest.testFiltraExceptions Coverage Results" MODIFIED="1637950211403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -568,6 +579,6 @@
     <SUITE FILE_PATH="coverage/DS_24_08$ApartamentosTest_ordenaciones1Test.ic" NAME="ApartamentosTest.ordenaciones1Test Coverage Results" MODIFIED="1636223907160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$NetworkTest_e3_testExceptions.ic" NAME="NetworkTest_e3.testExceptions Coverage Results" MODIFIED="1635789356929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_B2_test.ic" NAME="All in DS-24-08-B2 test Coverage Results" MODIFIED="1635246629256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_PD.ic" NAME="All in DS-24-08-PD Coverage Results" MODIFIED="1638210703656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_PD.ic" NAME="All in DS-24-08-PD Coverage Results" MODIFIED="1638211247146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

@@ -63,6 +63,7 @@ public class PlanificadorTareas {
     public void procesarDependencias(String filename) throws IllegalArgumentException{
         try {
             Scanner in = new Scanner(new FileReader("src/e2/resources/" + filename));
+            cabeceras.clear();
             while (in.hasNext()) {
                 String[] elems = in.nextLine().split(" -> ");
                 setDep(elems[0].charAt(0), elems[1].charAt(0));
