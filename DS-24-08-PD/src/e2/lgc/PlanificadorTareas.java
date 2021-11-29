@@ -19,12 +19,6 @@ public class PlanificadorTareas {
     private final List<Tarea> cabeceras = new ArrayList<>();
 
 
-    private void addCabecera(Tarea tarea) {
-        cabeceras.add(tarea);
-    }
-    private void deleteCabecera(Tarea tarea) {
-        cabeceras.remove(tarea);
-    }
     private Tarea findCabecera(char tarea) {
         for (Tarea t : cabeceras) {
             if (t.getNombre() == tarea) {
@@ -49,7 +43,7 @@ public class PlanificadorTareas {
         Tarea a = findTarea(cabeceras, tareaA);
         if (a == null) {
             a = new Tarea(tareaA);
-            addCabecera(a);
+            cabeceras.add(a);
         }
 
         Tarea b = findCabecera(tareaB);
@@ -60,26 +54,27 @@ public class PlanificadorTareas {
                 b = new Tarea(tareaB);
             }
         } else {
-            deleteCabecera(b);
+            cabeceras.remove(b);
         }
 
         a.addNextTarea(b);
     }
 
-    public void procesarDependencias(String filename) {
+    public void procesarDependencias(String filename) throws IllegalArgumentException{
         try {
-            Scanner in = new Scanner(new FileReader("DS-24-08-PD/src/e2/resources/" + filename));
+            Scanner in = new Scanner(new FileReader("src/e2/resources/" + filename));
             while (in.hasNext()) {
                 String[] elems = in.nextLine().split(" -> ");
                 setDep(elems[0].charAt(0), elems[1].charAt(0));
             }
             in.close();
         } catch (FileNotFoundException e) {
-            System.out.println("Error: No existe \"" + filename + "\" en la carpeta e2/resources");
+            throw new IllegalArgumentException("Error: No existe \"" + filename + "\" en la carpeta e2/resources");
         }
     }
 
-    public String ordenaSegun(OrdenPlanificacion metodo) {
+    public String ordenaSegun(OrdenPlanificacion metodo)throws IllegalArgumentException {
+        if(metodo==null)throw new IllegalArgumentException("Argumento nulo");
         return metodo.ordenar(new ArrayList<>(cabeceras));
     }
 
@@ -103,12 +98,5 @@ public class PlanificadorTareas {
 */
 
 
-    public static void main(String[] args) {
-         PlanificadorTareas pt = new PlanificadorTareas();
-         pt.procesarDependencias("entrada1.txt");
-        System.out.println("Dependencia fuerte "+pt.ordenaSegun(new OrdenDepFuerte()));
-        System.out.println("Dependencia debil "+pt.ordenaSegun(new OrdenDepDebil()));
-        System.out.println("Dependencia jerarquica "+pt.ordenaSegun(new OrdenJerarquico()));
 
-    }
 }

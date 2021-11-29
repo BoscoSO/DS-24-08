@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="Practica Diseño e1">
+    <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="Practica Diseño e2, sin tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/dto/Tarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/dto/Tarea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/lgc/PlanificadorTareas.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/lgc/PlanificadorTareas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenDepDebil.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenDepDebil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenDepFuerte.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenDepFuerte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenJerarquico.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenJerarquico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenPlanificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenPlanificacion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +60,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/DS-24-08-B2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/DS-24-08-PD/src/e2/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -65,6 +71,7 @@
       <recent name="e1.util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Propietario\inteli-proyects\DS-24-08\DS-24-08-PD\src\e2\resources" />
       <recent name="D:\Propietario\inteli-proyects\DS-24-08\DS-24-08-B2" />
       <recent name="D:\Propietario\inteli-proyects\DS-24-08\tests\B1_tests" />
       <recent name="D:\Propietario\inteli-proyects\DS-24-08\tests" />
@@ -91,13 +98,14 @@
       <recent name="e2.dto" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="e2" />
       <recent name="e2.util" />
       <recent name="e1.util" />
       <recent name="B2_tests" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PlanificadorTareas">
+  <component name="RunManager" selected="JUnit.All in DS-24-08-PD">
     <configuration name="PlanificadorTareas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="e2.lgc.PlanificadorTareas" />
       <module name="DS-24-08-PD" />
@@ -133,69 +141,69 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BilletesTest.testFiltraExceptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlanificadorTest.testOrdenes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DS-24-08-PD" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="e1.*" />
+          <option name="PATTERN" value="e2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="e1" />
-      <option name="MAIN_CLASS_NAME" value="e1.BilletesTest" />
-      <option name="METHOD_NAME" value="testFiltraExceptions" />
+      <option name="PACKAGE_NAME" value="e2" />
+      <option name="MAIN_CLASS_NAME" value="e2.PlanificadorTest" />
+      <option name="METHOD_NAME" value="testOrdenes" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BilletesTest.testFiltrados1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlanificadorTest.testPlanificador" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DS-24-08-PD" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="e1.*" />
+          <option name="PATTERN" value="e2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="e1" />
-      <option name="MAIN_CLASS_NAME" value="e1.BilletesTest" />
-      <option name="METHOD_NAME" value="testFiltrados1" />
+      <option name="PACKAGE_NAME" value="e2" />
+      <option name="MAIN_CLASS_NAME" value="e2.PlanificadorTest" />
+      <option name="METHOD_NAME" value="testPlanificador" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BilletesTest.testFiltrados2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlanificadorTest.testTareas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DS-24-08-PD" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="e1.*" />
+          <option name="PATTERN" value="e2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="e1" />
-      <option name="MAIN_CLASS_NAME" value="e1.BilletesTest" />
-      <option name="METHOD_NAME" value="testFiltrados2" />
+      <option name="PACKAGE_NAME" value="e2" />
+      <option name="MAIN_CLASS_NAME" value="e2.PlanificadorTest" />
+      <option name="METHOD_NAME" value="testTareas" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.All in DS-24-08-B2" />
-      <item itemvalue="JUnit.BilletesTest.testFiltraExceptions" />
-      <item itemvalue="JUnit.BilletesTest.testFiltrados2" />
-      <item itemvalue="JUnit.BilletesTest.testFiltrados1" />
-      <item itemvalue="JUnit.All in DS-24-08-PD" />
       <item itemvalue="Application.PlanificadorTareas" />
+      <item itemvalue="JUnit.All in DS-24-08-B2" />
+      <item itemvalue="JUnit.All in DS-24-08-PD" />
+      <item itemvalue="JUnit.PlanificadorTest.testTareas" />
+      <item itemvalue="JUnit.PlanificadorTest.testOrdenes" />
+      <item itemvalue="JUnit.PlanificadorTest.testPlanificador" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PlanificadorTareas" />
         <item itemvalue="JUnit.All in DS-24-08-PD" />
-        <item itemvalue="JUnit.BilletesTest.testFiltrados1" />
-        <item itemvalue="JUnit.BilletesTest.testFiltraExceptions" />
-        <item itemvalue="JUnit.BilletesTest.testFiltrados2" />
+        <item itemvalue="JUnit.PlanificadorTest.testPlanificador" />
+        <item itemvalue="Application.PlanificadorTareas" />
+        <item itemvalue="JUnit.PlanificadorTest.testOrdenes" />
+        <item itemvalue="JUnit.PlanificadorTest.testTareas" />
       </list>
     </recent_temporary>
   </component>
@@ -488,7 +496,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638039648051</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Practica Diseño e2, sin tests">
+      <created>1638049053200</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1638049053200</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Practica Diseño e2, sin tests">
+      <created>1638049133591</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1638049133591</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,7 +545,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="entrega defensa" />
     <MESSAGE value="Practica Diseño e1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Practica Diseño e1" />
+    <MESSAGE value="Practica Diseño e2, sin tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Practica Diseño e2, sin tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DS_24_08$BilletesTest_testFiltraExceptions.ic" NAME="BilletesTest.testFiltraExceptions Coverage Results" MODIFIED="1637950211403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -545,6 +568,6 @@
     <SUITE FILE_PATH="coverage/DS_24_08$ApartamentosTest_ordenaciones1Test.ic" NAME="ApartamentosTest.ordenaciones1Test Coverage Results" MODIFIED="1636223907160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$NetworkTest_e3_testExceptions.ic" NAME="NetworkTest_e3.testExceptions Coverage Results" MODIFIED="1635789356929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_B2_test.ic" NAME="All in DS-24-08-B2 test Coverage Results" MODIFIED="1635246629256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_PD.ic" NAME="All in DS-24-08-PD Coverage Results" MODIFIED="1637951169302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_PD.ic" NAME="All in DS-24-08-PD Coverage Results" MODIFIED="1638210703656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

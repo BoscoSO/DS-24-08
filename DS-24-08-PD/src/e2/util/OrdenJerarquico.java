@@ -8,19 +8,20 @@ import java.util.List;
 public final class OrdenJerarquico implements OrdenPlanificacion{
 
     @Override
-    public String ordenar(List<Tarea> cabeceras) {
+    public String ordenar(List<Tarea> cabeceras) throws IllegalArgumentException{
+        if(cabeceras==null)throw new IllegalArgumentException("Argumento nulo");
         List<Tarea> ordenadas = new ArrayList<>();
         List<Tarea> nextcabeceras = new ArrayList<>();
         boolean end = false;
         while (!end) {
-            char actual = 90;
+            char actual = 91;
             if (cabeceras.isEmpty()) end = true;
             else {
                 for (Tarea t : cabeceras)
                     if (actual > t.getNombre())
                         actual = t.getNombre();
 
-                Tarea terminada = findTarea(cabeceras, actual);
+                Tarea terminada = OrdenPlanificacion.findTarea(cabeceras, actual);
 
                 if (!ordenadas.contains(terminada))
                     ordenadas.add(terminada);
@@ -34,8 +35,6 @@ public final class OrdenJerarquico implements OrdenPlanificacion{
                 }
             }
         }
-
-
 
 
         if (!ordenadas.isEmpty()) {

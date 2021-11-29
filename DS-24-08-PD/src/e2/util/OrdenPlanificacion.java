@@ -4,9 +4,11 @@ import e2.dto.Tarea;
 
 import java.util.List;
 
-public sealed interface OrdenPlanificacion permits OrdenDepFuerte,OrdenDepDebil,OrdenJerarquico {
+public interface OrdenPlanificacion {
 
-    default Tarea findTarea(List<Tarea> heads, char tareaBuscada) {
+    String ordenar(List<Tarea> cabeceras) throws IllegalArgumentException;
+
+    static Tarea findTarea(List<Tarea> heads, char tareaBuscada) {
         for (Tarea t : heads) {
             if (t.getNombre() == tareaBuscada) {
                 return t;
@@ -17,5 +19,5 @@ public sealed interface OrdenPlanificacion permits OrdenDepFuerte,OrdenDepDebil,
         }
         return null;
     }
-    String ordenar(List<Tarea> cabeceras);
+
 }

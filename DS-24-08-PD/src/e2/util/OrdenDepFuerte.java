@@ -8,7 +8,8 @@ import java.util.List;
 public final class OrdenDepFuerte implements OrdenPlanificacion {
 
     @Override
-    public String ordenar(List<Tarea> cabeceras) {
+    public String ordenar(List<Tarea> cabeceras) throws IllegalArgumentException{
+        if(cabeceras==null)throw new IllegalArgumentException("Argumento nulo");
         List<Tarea> ordenadas = new ArrayList<>();
         boolean end = false;
         while (!end) {
@@ -19,13 +20,13 @@ public final class OrdenDepFuerte implements OrdenPlanificacion {
                     if (actual > t.getNombre())
                         actual = t.getNombre();
 
-                Tarea terminada = findTarea(cabeceras, actual);
+                Tarea terminada = OrdenPlanificacion.findTarea(cabeceras, actual);
 
                 ordenadas.add(terminada);
                 cabeceras.remove(terminada);
 
                 for (Tarea t : terminada.getNextTareas())
-                    if (findTarea(cabeceras, t.getNombre()) == null)
+                    if (OrdenPlanificacion.findTarea(cabeceras, t.getNombre()) == null)
                         cabeceras.add(t);
             }
         }
