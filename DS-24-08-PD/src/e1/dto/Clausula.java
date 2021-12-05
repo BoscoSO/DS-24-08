@@ -1,9 +1,6 @@
 package e1.dto;
 
-import e1.util.FiltroBilletes;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public enum Clausula {
@@ -38,7 +35,7 @@ public enum Clausula {
 
     };
 
-    public abstract List<Billete> perform(List<List<Billete>>  listasBilletes) throws IllegalArgumentException;//minimo 2 elementos el primero siempre la lista entera
+    public abstract List<Billete> perform(List<List<Billete>>  listasBilletes) throws IllegalArgumentException;
 
     List<Billete> distinct(List<Billete> list) {
         List<Billete> laux = new ArrayList<>();

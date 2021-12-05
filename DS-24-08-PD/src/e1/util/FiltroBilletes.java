@@ -1,10 +1,10 @@
 package e1.util;
 
 import e1.dto.Billete;
-import java.util.Comparator;
+
 import java.util.List;
 
-public interface FiltroBilletes {
+public sealed interface FiltroBilletes permits FiltroDestino, FiltroFecha, FiltroOrigen, FiltroPrecio {
 
     List<Billete> filtrar(List<Billete> billetes);
 

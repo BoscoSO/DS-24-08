@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class FiltroDestino implements FiltroBilletes{
+public final class FiltroDestino implements FiltroBilletes{
+
     private final String destino;
 
     public FiltroDestino(String destino) {
@@ -14,7 +15,7 @@ public class FiltroDestino implements FiltroBilletes{
     }
 
     @Override
-    public List<Billete>  filtrar(List<Billete> billetes) {
+    public List<Billete> filtrar(List<Billete> billetes) {
         List<Billete> aux=new ArrayList<>();
         for(Billete b: billetes){
             if(b.getDestino().equals(destino)){

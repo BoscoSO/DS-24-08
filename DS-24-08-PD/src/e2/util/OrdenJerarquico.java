@@ -7,14 +7,12 @@ import java.util.List;
 
 public final class OrdenJerarquico implements OrdenPlanificacion{
 
-    @Override
-    public String ordenar(List<Tarea> cabeceras) throws IllegalArgumentException{
-        if(cabeceras==null)throw new IllegalArgumentException("Argumento nulo");
+    private List<Tarea> jerarquico(List<Tarea> cabeceras){
         List<Tarea> ordenadas = new ArrayList<>();
         List<Tarea> nextcabeceras = new ArrayList<>();
         boolean end = false;
         while (!end) {
-            char actual = 91;
+            char actual = 99;
             if (cabeceras.isEmpty()) end = true;
             else {
                 for (Tarea t : cabeceras)
@@ -27,7 +25,9 @@ public final class OrdenJerarquico implements OrdenPlanificacion{
                     ordenadas.add(terminada);
                 cabeceras.remove(terminada);
 
-                nextcabeceras.addAll(terminada.getNextTareas());
+                if (terminada != null)
+                    nextcabeceras.addAll(terminada.getNextTareas());
+
 
                 if(cabeceras.isEmpty()){
                     cabeceras.addAll(nextcabeceras);
@@ -35,16 +35,15 @@ public final class OrdenJerarquico implements OrdenPlanificacion{
                 }
             }
         }
+        return ordenadas;
+    }
 
+    @Override
+    public String ordenar(List<Tarea> cabeceras) throws IllegalArgumentException {
+        if (cabeceras == null) throw new IllegalArgumentException("Argumento nulo");
 
-        if (!ordenadas.isEmpty()) {
-            String orden = ordenadas.get(0).toString();
-            ordenadas.remove(0);
-            for (Tarea t : ordenadas)
-                orden += " - " + t;
+        List<Tarea> ordenadas = new ArrayList<>(jerarquico(cabeceras));
 
-            return orden;
-        } else return "";
-
+        return OrdenPlanificacion.ordenToString(ordenadas);
     }
 }

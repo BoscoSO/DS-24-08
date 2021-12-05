@@ -7,13 +7,11 @@ import java.util.List;
 
 public final class OrdenDepFuerte implements OrdenPlanificacion {
 
-    @Override
-    public String ordenar(List<Tarea> cabeceras) throws IllegalArgumentException{
-        if(cabeceras==null)throw new IllegalArgumentException("Argumento nulo");
+    private List<Tarea> depFuerte(List<Tarea> cabeceras) {
         List<Tarea> ordenadas = new ArrayList<>();
         boolean end = false;
         while (!end) {
-            char actual = 90;
+            char actual = 99;
             if (cabeceras.isEmpty()) end = true;
             else {
                 for (Tarea t : cabeceras)
@@ -25,19 +23,23 @@ public final class OrdenDepFuerte implements OrdenPlanificacion {
                 ordenadas.add(terminada);
                 cabeceras.remove(terminada);
 
-                for (Tarea t : terminada.getNextTareas())
-                    if (OrdenPlanificacion.findTarea(cabeceras, t.getNombre()) == null)
-                        cabeceras.add(t);
+                if (terminada != null)
+                    for (Tarea t : terminada.getNextTareas())
+                        if (OrdenPlanificacion.findTarea(cabeceras, t.getNombre()) == null)
+                            cabeceras.add(t);
+
             }
         }
-        if (!ordenadas.isEmpty()) {
-            String orden = ordenadas.get(0).toString();
-            ordenadas.remove(0);
-            for (Tarea t : ordenadas)
-                orden += " - " + t;
 
-            return orden;
-        } else return "";
+        return ordenadas;
+    }
 
+    @Override
+    public String ordenar(List<Tarea> cabeceras) throws IllegalArgumentException {
+        if (cabeceras == null) throw new IllegalArgumentException("Argumento nulo");
+
+        List<Tarea> ordenadas = new ArrayList<>(depFuerte(cabeceras));
+
+        return OrdenPlanificacion.ordenToString(ordenadas);
     }
 }

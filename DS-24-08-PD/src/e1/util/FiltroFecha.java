@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class FiltroFecha implements FiltroBilletes{
+public final class FiltroFecha implements FiltroBilletes{
     private final String fecha;
 
     public FiltroFecha(String fecha) {

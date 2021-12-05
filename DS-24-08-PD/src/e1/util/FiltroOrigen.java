@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class FiltroOrigen implements FiltroBilletes{
+public final class FiltroOrigen implements FiltroBilletes{
     private final String origen;
 
     public FiltroOrigen(String origen) {

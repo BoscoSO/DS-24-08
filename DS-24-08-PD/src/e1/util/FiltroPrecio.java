@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-public class FiltroPrecio implements FiltroBilletes {
+public final class FiltroPrecio implements FiltroBilletes {
     private final double precio;
     private final List<Tipo> clausulas;
 
@@ -16,7 +16,7 @@ public class FiltroPrecio implements FiltroBilletes {
     }
 
 
-    public FiltroPrecio(double precio, List<Tipo> tipo) {           //Solo dos clausulas a la vez < |> | <=| >=| ==
+    public FiltroPrecio(double precio, List<Tipo> tipo) {           //Solo dos clausulas a la vez maximo (<,>,<=,>=,== )
         this.precio = Objects.requireNonNullElse(precio,0.0);
         clausulas =Objects.requireNonNullElse(tipo,Collections.emptyList());
     }

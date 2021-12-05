@@ -1,17 +1,11 @@
 package e2.lgc;
 
 import e2.dto.Tarea;
-import e2.util.OrdenDepDebil;
-import e2.util.OrdenDepFuerte;
-import e2.util.OrdenJerarquico;
 import e2.util.OrdenPlanificacion;
 
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
@@ -20,26 +14,23 @@ public class PlanificadorTareas {
 
 
     private Tarea findCabecera(char tarea) {
-        for (Tarea t : cabeceras) {
-            if (t.getNombre() == tarea) {
+        for (Tarea t : cabeceras)
+            if (t.getNombre() == tarea)
                 return t;
-            }
-        }
         return null;
     }
     private Tarea findTarea(List<Tarea> heads, char tareaBuscada) {
-        for (Tarea t : heads) {
+        for (Tarea t : heads)
             if (t.getNombre() == tareaBuscada) {
                 return t;
             } else {
                 Tarea aux = findTarea(t.getNextTareas(), tareaBuscada);
                 if (aux != null) return aux;
             }
-        }
+
         return null;
     }
     private void setDep(char tareaA, char tareaB) {
-
         Tarea a = findTarea(cabeceras, tareaA);
         if (a == null) {
             a = new Tarea(tareaA);
@@ -50,12 +41,11 @@ public class PlanificadorTareas {
 
         if (b == null) {
             b = findTarea(cabeceras, tareaB);
-            if (b == null) {
+            if (b == null)
                 b = new Tarea(tareaB);
-            }
-        } else {
+        } else
             cabeceras.remove(b);
-        }
+
 
         a.addNextTarea(b);
     }
@@ -70,7 +60,7 @@ public class PlanificadorTareas {
             }
             in.close();
         } catch (FileNotFoundException e) {
-            throw new IllegalArgumentException("Error: No existe \"" + filename + "\" en la carpeta e2/resources");
+            throw new IllegalArgumentException("Error: No existe \"" + filename + "\" en la carpeta src/e2/resources");
         }
     }
 
@@ -79,24 +69,6 @@ public class PlanificadorTareas {
         return metodo.ordenar(new ArrayList<>(cabeceras));
     }
 
-
-/*
-    public String GrafoDependencias() {
-        String cad = "";
-        for (Tarea t : cabeceras) {
-
-            cad+=grafoNext(t);
-        }
-
-        return cad;
-    }
-    private String grafoNext(Tarea t){
-        String cad="---->"+t.getNombre();
-
-
-        return cad;
-    }
-*/
 
 
 

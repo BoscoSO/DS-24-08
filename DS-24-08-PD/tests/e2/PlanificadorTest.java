@@ -37,6 +37,7 @@ public class PlanificadorTest {
         assertEquals(t.hashCode(), new Tarea('A').hashCode());
         assertNotEquals(t, new Tarea('C'));
         assertNotEquals(t, null);
+        assertNotEquals(t, "a string");
 
         assertNotEquals(null, t.getNextTareas());
         t.addNextTarea(new Tarea('B'));

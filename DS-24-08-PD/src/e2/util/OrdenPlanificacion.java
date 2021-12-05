@@ -4,7 +4,7 @@ import e2.dto.Tarea;
 
 import java.util.List;
 
-public interface OrdenPlanificacion {
+public sealed interface OrdenPlanificacion permits OrdenDepFuerte,OrdenDepDebil,OrdenJerarquico{
 
     String ordenar(List<Tarea> cabeceras) throws IllegalArgumentException;
 
@@ -20,4 +20,14 @@ public interface OrdenPlanificacion {
         return null;
     }
 
+    static String ordenToString(List<Tarea> ordenadas){
+        if (!ordenadas.isEmpty()) {
+            StringBuilder orden = new StringBuilder(ordenadas.get(0).toString());
+            ordenadas.remove(0);
+            for (Tarea t : ordenadas)
+                orden.append(" - ").append(t);
+
+            return orden.toString();
+        } else return "";
+    }
 }
