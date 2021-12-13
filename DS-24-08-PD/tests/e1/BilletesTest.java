@@ -24,14 +24,14 @@ public class BilletesTest {
 
     @BeforeEach
     void setUp() {
-        b1 = new Billete(8.90, "Santiago", "Lugo", "12/04/21");
-        b2 = new Billete(10.00, "Lugo", "Ourense", "12/04/21");
-        b3 = new Billete(16.50, "Ourense", "Vigo", "12/04/21");
-        b4 = new Billete(12.33, "Ourense", "Santiago", "13/04/21");
-        b5 = new Billete(16.50, "Vigo", "Ourense", "13/04/21");
-        b6 = new Billete(16.50, "Vigo", "Ourense", "14/04/21");
-        b7 = new Billete(15.00, "Santiago", "Vigo", "14/04/21");
-        b8 = new Billete(8.90, "Lugo", "Santiago", "14/04/21");
+        b1 = new Billete(8.90f, "Santiago", "Lugo", "12/04/21");
+        b2 = new Billete(10.00f, "Lugo", "Ourense", "12/04/21");
+        b3 = new Billete(16.50f, "Ourense", "Vigo", "12/04/21");
+        b4 = new Billete(12.33f, "Ourense", "Santiago", "13/04/21");
+        b5 = new Billete(16.50f, "Vigo", "Ourense", "13/04/21");
+        b6 = new Billete(16.50f, "Vigo", "Ourense", "14/04/21");
+        b7 = new Billete(15.00f, "Santiago", "Vigo", "14/04/21");
+        b8 = new Billete(8.90f, "Lugo", "Santiago", "14/04/21");
 
         List<Billete> billetes = new ArrayList<>(List.of(b1, b2, b3, b4, b5, b6, b7, b8));
 
@@ -50,10 +50,10 @@ public class BilletesTest {
 
     @Test
     void testBilletesExceptions() {
-        assertThrows(IllegalArgumentException.class, () -> new Billete(-6.22, "Santiago", "Orense", "12/05/22"));
-        assertThrows(IllegalArgumentException.class, () -> new Billete(6.22, null, "Orense", "12/05/22"));
-        assertThrows(IllegalArgumentException.class, () -> new Billete(6.22, "Santiago", null, "12/05/22"));
-        assertThrows(IllegalArgumentException.class, () -> new Billete(6.22, "Santiago", "Orense", null));
+        assertThrows(IllegalArgumentException.class, () -> new Billete(-6.22f, "Santiago", "Orense", "12/05/22"));
+        assertThrows(IllegalArgumentException.class, () -> new Billete(6.22f, null, "Orense", "12/05/22"));
+        assertThrows(IllegalArgumentException.class, () -> new Billete(6.22f, "Santiago", null, "12/05/22"));
+        assertThrows(IllegalArgumentException.class, () -> new Billete(6.22f, "Santiago", "Orense", null));
     }
 
     @Test
@@ -65,8 +65,8 @@ public class BilletesTest {
         assertThrows(IllegalArgumentException.class, () -> gb.filtrar(Clausula.AND, new ArrayList<>()));
         gb.setBilletes(new ArrayList<>());
         assertThrows(IllegalStateException.class, () -> gb.filtrar(Clausula.AND, List.of(new FiltroDestino("Santiago"))));
-        assertEquals(Collections.emptyList(), new FiltroPrecio(2.2, null).filtrar(List.of(b1, b2, b3)));
-        assertEquals(Collections.emptyList(), new FiltroPrecio(2.2, List.of(FiltroPrecio.Tipo.MENOR, FiltroPrecio.Tipo.MAYOR, FiltroPrecio.Tipo.IGUAL)).filtrar(List.of(b1, b2, b3)));
+        assertEquals(Collections.emptyList(), new FiltroPrecio(2.2f, null).filtrar(List.of(b1, b2, b3)));
+        assertEquals(Collections.emptyList(), new FiltroPrecio(2.2f, List.of(FiltroPrecio.Tipo.MENOR, FiltroPrecio.Tipo.MAYOR, FiltroPrecio.Tipo.IGUAL)).filtrar(List.of(b1, b2, b3)));
 
 
         assertThrows(IllegalArgumentException.class, () -> gb.combinarFiltrados(Clausula.AND, null));
@@ -80,7 +80,7 @@ public class BilletesTest {
         List<Billete> l1, l2, l3, l4, aux;
         l1 = gb.filtrar(Clausula.AND, List.of(new FiltroOrigen("Santiago"), new FiltroDestino("Vigo")));
         l2 = gb.filtrar(Clausula.OR, List.of(new FiltroFecha("13/04/21"), new FiltroFecha("14/04/21")));
-        l3 = gb.filtrar(Clausula.OR, List.of(new FiltroPrecio(15.00, List.of(FiltroPrecio.Tipo.IGUAL, FiltroPrecio.Tipo.MENOR))));
+        l3 = gb.filtrar(Clausula.OR, List.of(new FiltroPrecio(15.00f, List.of(FiltroPrecio.Tipo.IGUAL, FiltroPrecio.Tipo.MENOR))));
 
         l4 = gb.combinarFiltrados(Clausula.AND, l1, l2, l3);
 
@@ -92,7 +92,7 @@ public class BilletesTest {
         assertEquals(aux.hashCode(), l4.hashCode());
 
         //Trato de que coincidan muchas en cada filtro
-        l2 = gb.filtrar(Clausula.OR, List.of(new FiltroPrecio(15.00, List.of(FiltroPrecio.Tipo.IGUAL)), new FiltroFecha("13/04/21"), new FiltroFecha("14/04/21")));
+        l2 = gb.filtrar(Clausula.OR, List.of(new FiltroPrecio(15.00f, List.of(FiltroPrecio.Tipo.IGUAL)), new FiltroFecha("13/04/21"), new FiltroFecha("14/04/21")));
         l3 = gb.filtrar(Clausula.AND, List.of(new FiltroOrigen("Santiago")));
         l4 = gb.combinarFiltrados(Clausula.OR, l2, l3);
 
@@ -110,7 +110,7 @@ public class BilletesTest {
         List<Billete> l1, l2, l3, l4, aux;
         l1 = gb.filtrar(Clausula.OR, List.of(new FiltroOrigen("Ourense"), new FiltroOrigen("Vigo")));
         l2 = gb.filtrar(Clausula.OR, List.of(new FiltroFecha("12/04/21"), new FiltroFecha("13/04/21")));
-        l3 = gb.filtrar(Clausula.OR, List.of(new FiltroPrecio(12.33, List.of(FiltroPrecio.Tipo.IGUAL, FiltroPrecio.Tipo.MAYOR))));
+        l3 = gb.filtrar(Clausula.OR, List.of(new FiltroPrecio(12.33f, List.of(FiltroPrecio.Tipo.IGUAL, FiltroPrecio.Tipo.MAYOR))));
 
         l4 = gb.combinarFiltrados(Clausula.AND, l1, l2, l3);
 
@@ -123,7 +123,7 @@ public class BilletesTest {
 
 
         // solo los mayores
-        l3 = gb.filtrar(Clausula.OR, List.of(new FiltroPrecio(12.33, List.of(FiltroPrecio.Tipo.MAYOR))));
+        l3 = gb.filtrar(Clausula.OR, List.of(new FiltroPrecio(12.33f, List.of(FiltroPrecio.Tipo.MAYOR))));
 
         l4 = gb.combinarFiltrados(Clausula.AND, l1, l2, l3);
 
@@ -135,7 +135,7 @@ public class BilletesTest {
         assertEquals(aux.hashCode(), l4.hashCode());
 
         // solo los iguales
-        l3 = gb.filtrar(Clausula.OR, List.of(new FiltroPrecio(12.33, List.of(FiltroPrecio.Tipo.IGUAL))));
+        l3 = gb.filtrar(Clausula.OR, List.of(new FiltroPrecio(12.33f, List.of(FiltroPrecio.Tipo.IGUAL))));
 
         l4 = gb.combinarFiltrados(Clausula.AND, l1, l2, l3);
 
@@ -147,7 +147,7 @@ public class BilletesTest {
         assertEquals(aux.hashCode(), l4.hashCode()); // solo los iguales
 
         //menores
-        l3 = gb.filtrar(Clausula.OR, List.of(new FiltroPrecio(16.50, List.of(FiltroPrecio.Tipo.MENOR))));
+        l3 = gb.filtrar(Clausula.OR, List.of(new FiltroPrecio(16.50f, List.of(FiltroPrecio.Tipo.MENOR))));
 
         l4 = gb.combinarFiltrados(Clausula.AND, l1, l2, l3);
 
@@ -167,11 +167,11 @@ public class BilletesTest {
         assertNotEquals(b2, null);
         assertNotEquals(b2, "a string");
         assertNotEquals(null, b2);
-        assertNotEquals(b2, new Billete(11.00, "Lugo", "Ourense", "12/04/21"));
-        assertNotEquals(b2, new Billete(10.00, "Santiago", "Ourense", "12/04/21"));
-        assertNotEquals(b2, new Billete(10.00, "Lugo", "Vigo", "12/04/21"));
-        assertNotEquals(b2, new Billete(10.00, "Lugo", "Ourense", "14/04/21"));
-        assertEquals(b2, new Billete(10.00, "Lugo", "Ourense", "12/04/21"));
+        assertNotEquals(b2, new Billete(11.00f, "Lugo", "Ourense", "12/04/21"));
+        assertNotEquals(b2, new Billete(10.00f, "Santiago", "Ourense", "12/04/21"));
+        assertNotEquals(b2, new Billete(10.00f, "Lugo", "Vigo", "12/04/21"));
+        assertNotEquals(b2, new Billete(10.00f, "Lugo", "Ourense", "14/04/21"));
+        assertEquals(b2, new Billete(10.00f, "Lugo", "Ourense", "12/04/21"));
     }
 
 

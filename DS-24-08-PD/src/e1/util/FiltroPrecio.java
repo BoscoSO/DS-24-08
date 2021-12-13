@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Objects;
 
 public final class FiltroPrecio implements FiltroBilletes {
-    private final double precio;
+    private final float precio;
     private final List<Tipo> clausulas;
 
     public enum Tipo {
@@ -16,8 +16,8 @@ public final class FiltroPrecio implements FiltroBilletes {
     }
 
 
-    public FiltroPrecio(double precio, List<Tipo> tipo) {           //Solo dos clausulas a la vez maximo (<,>,<=,>=,== )
-        this.precio = Objects.requireNonNullElse(precio,0.0);
+    public FiltroPrecio(float precio, List<Tipo> tipo) {           //Solo dos clausulas a la vez maximo (<,>,<=,>=,== )
+        this.precio = Objects.requireNonNullElse(precio,0f);
         clausulas =Objects.requireNonNullElse(tipo,Collections.emptyList());
     }
 
@@ -31,17 +31,17 @@ public final class FiltroPrecio implements FiltroBilletes {
             int i = -1;
             if (clausulas.contains(Tipo.IGUAL)) i = 0;
             for (Billete b : billetes)
-                if (Double.compare(b.getPrecio(), precio) <= i)
+                if (Float.compare(b.getPrecio(), precio) <= i)
                     aux.add(b);
         } else if (clausulas.contains(Tipo.MAYOR)) {
             int i = 1;
             if (clausulas.contains(Tipo.IGUAL)) i = 0;
             for (Billete b : billetes)
-                if (Double.compare(b.getPrecio(), precio) >= i)
+                if (Float.compare(b.getPrecio(), precio) >= i)
                     aux.add(b);
         } else if (clausulas.contains(Tipo.IGUAL))
             for (Billete b : billetes)
-                if (Double.compare(b.getPrecio(), precio) == 0)
+                if (Float.compare(b.getPrecio(), precio) == 0)
                     aux.add(b);
 
 

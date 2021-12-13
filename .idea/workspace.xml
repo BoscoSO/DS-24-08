@@ -3,21 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="Practica Diseño sealed interfaces">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/lgc/GestorBilletes.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/lgc/GestorBilletes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenPlanificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenPlanificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Clausula$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Clausula$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Clausula$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Clausula$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Clausula.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Clausula.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/dto/Billete.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/dto/Billete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroDestino.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroDestino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroPrecio.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroPrecio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/tests/e1/BilletesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/tests/e1/BilletesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/lgc/GestorBilletes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/lgc/GestorBilletes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroBilletes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroBilletes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroDestino.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroDestino.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroFecha.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroFecha.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroOrigen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroOrigen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroPrecio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroPrecio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/lgc/PlanificadorTareas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/lgc/PlanificadorTareas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenDepDebil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenDepDebil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenDepFuerte.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenDepFuerte.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenJerarquico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenJerarquico.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenPlanificacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenPlanificacion.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -541,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638738308648</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Practica Diseño sealed interfaces">
+      <created>1639414906077</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1639414906077</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,6 +599,6 @@
     <SUITE FILE_PATH="coverage/DS_24_08$ApartamentosTest_ordenaciones1Test.ic" NAME="ApartamentosTest.ordenaciones1Test Coverage Results" MODIFIED="1636223907160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$NetworkTest_e3_testExceptions.ic" NAME="NetworkTest_e3.testExceptions Coverage Results" MODIFIED="1635789356929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_B2_test.ic" NAME="All in DS-24-08-B2 test Coverage Results" MODIFIED="1635246629256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_PD.ic" NAME="All in DS-24-08-PD Coverage Results" MODIFIED="1638737807193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_PD.ic" NAME="All in DS-24-08-PD Coverage Results" MODIFIED="1639418347940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

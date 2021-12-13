@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Objects;
 
 public final class FiltroDestino implements FiltroBilletes{
-
     private final String destino;
 
     public FiltroDestino(String destino) {
