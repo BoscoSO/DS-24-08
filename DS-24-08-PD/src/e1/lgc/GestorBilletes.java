@@ -3,7 +3,6 @@ package e1.lgc;
 import e1.dto.Billete;
 import e1.dto.Clausula;
 import e1.util.*;
-
 import java.util.ArrayList;
 import java.util.List;
 

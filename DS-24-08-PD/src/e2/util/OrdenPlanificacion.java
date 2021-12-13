@@ -4,7 +4,7 @@ import e2.dto.Tarea;
 
 import java.util.List;
 
-public sealed interface OrdenPlanificacion permits OrdenDepFuerte,OrdenDepDebil,OrdenJerarquico{
+public interface OrdenPlanificacion{
 
     String ordenar(List<Tarea> cabeceras) throws IllegalArgumentException;
 

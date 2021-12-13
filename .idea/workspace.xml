@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="Practica Diseño e2, con tests">
+    <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="Practica Diseño sealed interfaces">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/dto/Clausula.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/dto/Clausula.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/lgc/GestorBilletes.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/lgc/GestorBilletes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroBilletes.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroBilletes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroDestino.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroDestino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroFecha.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroFecha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroOrigen.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroOrigen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroPrecio.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroPrecio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/lgc/PlanificadorTareas.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/lgc/PlanificadorTareas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenDepDebil.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenDepDebil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenDepFuerte.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenDepFuerte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenJerarquico.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenJerarquico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenPlanificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e2/util/OrdenPlanificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/tests/e2/PlanificadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/tests/e2/PlanificadorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/DS-24-08-PD/e2/PlanificadorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DS-24-08-PD/e2/PlanificadorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Clausula$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Clausula$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Clausula$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Clausula$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Clausula.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Clausula.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/lgc/GestorBilletes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/lgc/GestorBilletes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroBilletes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroBilletes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroDestino.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroDestino.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroFecha.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroFecha.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroOrigen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroOrigen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroPrecio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroPrecio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/lgc/PlanificadorTareas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/lgc/PlanificadorTareas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenDepDebil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenDepDebil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenDepFuerte.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenDepFuerte.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenJerarquico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenJerarquico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenPlanificacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenPlanificacion.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +71,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/DS-24-08-PD/src/e2/resources" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
@@ -532,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638211543538</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Practica Diseño sealed interfaces">
+      <created>1638738308648</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1638738308648</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -569,7 +578,8 @@
     <MESSAGE value="Practica Diseño e1" />
     <MESSAGE value="Practica Diseño e2, sin tests" />
     <MESSAGE value="Practica Diseño e2, con tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Practica Diseño e2, con tests" />
+    <MESSAGE value="Practica Diseño sealed interfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="Practica Diseño sealed interfaces" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DS_24_08$BilletesTest_testFiltraExceptions.ic" NAME="BilletesTest.testFiltraExceptions Coverage Results" MODIFIED="1637950211403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
