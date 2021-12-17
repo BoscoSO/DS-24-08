@@ -2,14 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e566158b-16d6-4fcb-935f-5b8b5964a892" name="Changes" comment="Practica Diseño sealed interfaces">
+      <change beforePath="$PROJECT_DIR$/.idea/DS-24-08.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DS-24-08.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/dto/Billete.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/dto/Billete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroDestino.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroDestino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroPrecio.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/src/e1/util/FiltroPrecio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/tests/e1/BilletesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/tests/e1/BilletesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/lgc/GestorBilletes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/lgc/GestorBilletes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroPrecio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroPrecio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenPlanificacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e2/util/OrdenPlanificacion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-B1/DS-24-08-B1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-B1/DS-24-08-B1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-B2/DS-24-08-B2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-B2/DS-24-08-B2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS-24-08-PD/tests/e2/PlanificadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DS-24-08-PD/tests/e2/PlanificadorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B1/e1/StringCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B1/e2/Slopes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B1/e3/Melody$Accidentals.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B1/e3/Melody$Notes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B1/e3/Melody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B1/e3/NoteInMel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B1/e3/NoteInMel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B1/e4/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B1/e4/MAINTEST.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B1/e4/Operation$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B1/e4/Operation$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B1/e4/Operation$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B1/e4/Operation$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-B1/e4/Operation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Billete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/dto/Billete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroDestino.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-24-08-PD/e1/util/FiltroDestino.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DS-24-08-B1/CalculatorTest_e4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DS-24-08-B1/MelodyTest_e3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DS-24-08-B1/SlopesTest_e2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DS-24-08-B1/StringCountTest_e1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DS-24-08-PD/e1/BilletesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DS-24-08-PD/e1/BilletesTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +80,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/DS-24-08-PD/src/e2/resources" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
@@ -79,11 +97,11 @@
       <recent name="D:\Propietario\inteli-proyects\DS-24-08\e3\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Propietario\Desktop\p1\DS-24-08\DS-24-08-PD\doc" />
       <recent name="D:\Propietario\inteli-proyects\DS-24-08\DS-24-08-B2\src\e4" />
       <recent name="D:\Propietario\inteli-proyects\DS-24-08" />
       <recent name="D:\Propietario\inteli-proyects\DS-24-08\DS-24-08-B1\tests" />
       <recent name="D:\Propietario\inteli-proyects\DS-24-08\DS-24-08-B1" />
-      <recent name="D:\Propietario\inteli-proyects\DS-24-08\tests" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -599,6 +617,6 @@
     <SUITE FILE_PATH="coverage/DS_24_08$ApartamentosTest_ordenaciones1Test.ic" NAME="ApartamentosTest.ordenaciones1Test Coverage Results" MODIFIED="1636223907160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$NetworkTest_e3_testExceptions.ic" NAME="NetworkTest_e3.testExceptions Coverage Results" MODIFIED="1635789356929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_B2_test.ic" NAME="All in DS-24-08-B2 test Coverage Results" MODIFIED="1635246629256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_PD.ic" NAME="All in DS-24-08-PD Coverage Results" MODIFIED="1639418347940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/DS_24_08$All_in_DS_24_08_PD.ic" NAME="All in DS-24-08-PD Coverage Results" MODIFIED="1639760720272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

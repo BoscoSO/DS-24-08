@@ -1,23 +1,13 @@
 package e2;
 
-import e1.dto.Billete;
-import e1.dto.Clausula;
-import e1.lgc.GestorBilletes;
-import e1.util.FiltroDestino;
-import e1.util.FiltroFecha;
-import e1.util.FiltroOrigen;
-import e1.util.FiltroPrecio;
 import e2.dto.Tarea;
 import e2.lgc.PlanificadorTareas;
 import e2.util.OrdenDepDebil;
 import e2.util.OrdenDepFuerte;
 import e2.util.OrdenJerarquico;
 import e2.util.OrdenPlanificacion;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
